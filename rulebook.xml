@@ -208,7 +208,7 @@ A <reference name="unit">unit</reference>'s <reference name="centre_of_unit">Cen
             Any <reference name="model">model</reference> with one of the following <reference name="troop_type">Troop Types</reference>: <reference name="cavalry">Cavalry</reference>, <reference name="monstrous_infantry">Monstrous Infantry</reference>, <reference name="monstrous_beast">Monstrous Beast</reference>, <reference name="monstrous_cavalry">Monstrous Cavalry</reference> and <reference name="chariot">Chariot</reference>.
           </note>
 
-          <note title="Large">
+          <note tit="Large">
             Any <reference name="model">model</reference> with the <reference name="large_target">Large Target</reference> special rule.
           </note>
         </definition>
