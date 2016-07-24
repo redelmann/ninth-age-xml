@@ -365,7 +365,7 @@ A <reference name="unit">unit</reference>'s <reference name="centre_of_unit">Cen
     </section>
   </chapter>
 
-  <!-- CHAPTER : Characteristics -->
+  <!-- CHAPTER : Setting up a Game -->
 
   <chapter title="Setting up a Game">
     <section title="Building an Army">
@@ -579,6 +579,8 @@ A <reference name="unit">unit</reference>'s <reference name="centre_of_unit">Cen
       </subsection>
     </section>
   </chapter>
+
+  <!-- CHAPTER : The Pre-Game Sequence -->
 
   <chapter title="The Pre-Game Sequence">
     There are several steps that players must go through in order to set up a game of Fantasy Battles: The 9th Age. These steps are referred to as the <reference name="pregrame_sequence">pre-game sequence</reference>. The first and foremost step is to find a suitable opponent and agree on the size of the game. The players may then <reference name="share_army_list">share their Army Lists</reference> and begin <reference name="building_battlefield">building the Battlefield</reference>, followed by <reference name="deployment_type">picking the deployment type</reference>, choosing the <reference name="secondary_objective">Secondary Objectives</reference> of the game, determining <reference name="deployment_zone">Deployment Zones</reference> and <reference name="generating_spells">generating Wizard spells</reference>. The last step will consist of going through what is called the <reference name="deployment_phase">Deployment</reference>.
