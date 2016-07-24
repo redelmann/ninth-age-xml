@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  
+  <!-- CHAPTER : Models, Units and Formations -->
+
+  <chapter title="Models, Units and Formations">
+    <section title="Models">
+      <definition name="model">
+        <reference name="model">Models</reference> represent fighting warriors, monsters and spellcasters. Everything that is standing on the same <reference name="base">base</reference> is considered the same <reference name="model">model</reference> (e.g. a dragon and its rider or a <reference name="cannon">Cannon</reference> and its three crewmen are considered a single <reference name="model">model</reference>).
+      </definition>
+
+      <subsection title="Bases and Base Contact" name="bases_and_base_contact">
+        <definition name="base">
+          All <reference name="model">models</reference> are placed on a square, rectangular or round <reference name="base">base</reference>. The extent of the <reference name="model">model</reference> is considered to be its <reference name="base">base</reference>.</definition>
+
+          <br />
+
+          <reference name="base">Base</reference> sizes are given as two measurements in millimetres: front/width x side/length. (For example, the normal <reference name="cavalry" type="example">cavalry</reference> <reference name="base">base</reference> is 25x50mm). In some rare cases <reference name="model">models</reference> have round <reference name="base">bases</reference>. In these cases, only as single measurement is given: the diameter of the <reference name="base">base</reference>. (For example, a standard <reference name="war_machine" type="example">War Machine</reference> base is a round 60mm base).
+        
+          <br />
+
+        <definition name="base_contact">
+          Two <reference name="model">models</reference> are considered to be <reference name="base_contact">in base contact</reference> with each other if their <reference name="base">bases</reference> are touching one another, including corner to corner contact.
+        </definition>
+      </subsection>
+
+      <subsection title="Multipart Models">
+        <definition name="multipart_model">
+          <definition name="model_part">
+            <reference name="model">Models</reference> with more than one <reference name="characteristics_profile">Characteristics Profile</reference> are called <reference name="multipart_model">Multipart Models</reference>. For example, a cavalry model is a model with two parts (the rider and its mount), a chariot can be described as a single model consisting of five parts (two horses, two crewmen and one chariot chassis), while a normal foot soldier is a model which consists of a single part. Each part of such a model has its own <reference name="characteristics_profile">Characteristics Profile</reference> and can be referred to as a "<reference name="model_part">model part</reference>".
+          </definition>
+        </definition>
+      </subsection>
+    </section>
+    <section title="Units">
+        All <reference name="model">models</reference> are part of a unit. <definition name="unit">A <reference name="unit">unit</reference> is either a group of <reference name="model">models</reference> deployed in a formation consisting of <definition name="rank"><reference name="rank">ranks</reference> (along the width of the unit)</definition> and <definition name="file"><reference name="file">files</reference> (along the length of the unit)</definition> or a single <reference name="model">model</reference> operating on its own.</definition> Whenever a rule, ability, spell and so on affects a unit, all <reference name="model">models</reference> in the <reference name="unit">unit</reference> are affected. When forming a <reference name="unit">unit</reference>, all <reference name="model">models</reference> in the <reference name="unit">unit</reference> must be perfectly aligned <reference name="base_contact">in base contact</reference> with each other and face the same direction. <definition name="incomplete_rank">All <reference name="rank">ranks</reference> must always have the same width, except <definition name="incomplete_rear_rank">the last <reference name="rank">rank</reference> which can be shorter than the other <reference name="rank">ranks</reference>; if so, this is called an <reference name="incomplete_rear_rank">incomplete rear rank</reference>.  Note that it's perfectly fine for the last <reference name="rank">rank</reference> to have empty gaps in it, as long as the <reference name="model">models</reference> are aligned with those of the other <reference name="rank">ranks</reference>.</definition></definition>
+      <subsection title="Rank-and-File">
+        <definition name="rank_and_file">
+          Normal <reference name="model">models</reference> in a <reference name="unit">unit</reference> are called <reference name="rank_and_file">Rank-and-File</reference> <reference name="model">models</reference> <reference name="rank_and_file">(R&amp;F)</reference>. <reference name="character">Characters</reference> are not <reference name="rank_and_file">R&amp;F</reference> <reference name="model">models</reference>, but all other <reference name="model">models</reference> are.
+        </definition>
+      </subsection>
+      <subsection title="Full Ranks">
+        <definition name="full_rank">
+          A <reference name="full_rank">Full Rank</reference> is any <reference name="rank">rank</reference> which is at least 5 <reference name="model">models</reference> wide. Some <reference name="unit">units</reference> (such as <reference name="monstrous_infantry">Monstrous Infantry</reference>) require fewer than 5 <reference name="model">models</reference> to form a <reference name="full_rank">Full Rank</reference>, see <reference name="troop_type">Troop Types</reference> section for details.
+        </definition>
+      </subsection>
+      <subsection title="Horde Formation">
+        <definition name="horde_formation">
+          <reference name="unit">Units</reference> in <reference name="rank">ranks</reference> of 10 or more <reference name="model">models</reference> (6 or more in the case of <reference name="monstrous_rank">Monstrous Ranks</reference>) are considered to be in <reference name="horde_formation">Horde Formation</reference>.
+        </definition>
+      </subsection>
+      <subsection title="Footprint">
+        <definition name="footprint">
+          A <reference name="unit">unit</reference>'s <reference name="footprint">Footprint</reference> is the area occupied by the combined <reference name="base">bases</reference> of all the <reference name="model">models</reference> in a <reference name="unit">unit</reference>.
+        </definition>
+      </subsection>
+      <subsection title="Centre of Unit">
+        <definition name="centre_of_unit">
+A <reference name="unit">unit</reference>'s <reference name="centre_of_unit">Centre</reference> is defined by drawing an imaginary rectangle around the outer edges of the unit's <reference name="footprint">Footprint</reference>. The Centre of this box is considered to be the <reference name="centre_of_unit">Centre of the unit</reference>.
+        </definition>
+      </subsection>
+      <subsection title="Unit Facing and Arcs">
+        <definition name="arc">
+          A <reference name="unit">unit</reference> has 4 <reference name="arc">arcs</reference>: front, rear, and two flanks. Each arc is determined by extending a straight line from the corners of the unit's <reference name="base">bases</reference>, in a 135° angle from the unit's front (for the front arc), rear (for the rear arc) or flanks (for the flank arcs), see <link to="figure_1">figure 1</link>. <reference name="unit">Units</reference> on round <reference name="base">bases</reference> don't have <reference name="arc">arcs</reference> (they can draw <reference name="line_of_sight">Line of Sight</reference> from any point on their bases, in any direction).
+        </definition>
+      </subsection>
+      <figure name="figure_1">
+        <image source="centre_footprint_and_arcs.png" />
+        <caption title="Figure 1">
+          This unit has 3 <reference name="rank">ranks</reference> and 5 <reference name="file">files</reference>. The <reference name="base">base</reference> on the side is a <reference name="character">Character</reference> with a <reference name="mismatching_base">Mismatching base</reference> that has joined the <reference name="unit">unit</reference>. The last <reference name="rank">rank</reference> is <reference name="incomplete_rank">incomplete</reference> and only contains 3 <reference name="model">models</reference>. The <reference name="unit">unit</reference>'s <reference name="footprint">Footprint</reference> is the area occupied by the <reference name="base">bases</reference> of all the <reference name="model">models</reference> within the <reference name="unit">unit</reference> (the green area). The <reference name="centre_of_unit">Centre of the unit</reference> is the centre of the rectangle drawn around its outer edges (marked with a red x). The front, side and rear <reference name="arc">arcs</reference> are defined by using a 135° angle from the <reference name="unit">unit</reference>'s edges.
+        </caption>
+      </figure>
+    </section>
+  </chapter>
+
+
+  <!-- CHAPTER : General Principles -->
+
+  <chapter title="General Principles">
+    <section title="Turn">
+      <definition name="game_turn">
+        Fantasy Battles: The 9th Age is a turn based game. A standard game lasts for 6 <reference name="game_turn">Game Turns</reference>. One player has the first turn (called a <reference name="player_turn">Player Turn</reference>), in which they use their <reference name="unit">units</reference> to move and attack. After this, the other player has their first <reference name="player_turn">Player Turn</reference>. When this comes to an end, <reference name="game_turn">Game Turn</reference> 1 is completed. In <reference name="game_turn">Game Turn</reference> 2, the first player now has their second <reference name="player_turn">Player Turn</reference>, and so on, until both players have completed 6 <reference name="player_turn">Player Turns</reference>. This marks the end of the game.
+      </definition>
+
+      <subsection title="Player Turn">
+        <definition name="player_turn">
+          Each Player Turn is divided into four Phases, performed in the following order:
+
+          <sequence>
+            <item><reference name="movement_phase">Movement Phase</reference></item>
+            <item><reference name="magic_phase">Magic Phase</reference></item>
+            <item><reference name="shooting_phase">Shooting Phase</reference></item>
+            <item><reference name="close_combat_phase">Close Combat Phase</reference></item>
+          </sequence>
+        </definition>
+      </subsection>
+
+      <subsection title="Active and Reactive Player">
+        <definition name="active_player">The <reference name="active_player">Active Player</reference> is the player whose turn it currently is.</definition>
+        <definition name="reactive_player">The <reference name="reactive_player">Reactive Player</reference> is the player whose turn it currently is not.</definition>
+      </subsection>
+
+      <subsection title="Simultaneous Effects">
+        Whenever two or more effects happen at the same time, and the order matters, resolve effects controlled by the <reference name="active_player">Active Player</reference> first. Each player is free to decide in which order their own simultaneous abilities resolve. If there is a choice involved (such as abilities that may or may not be activated), the <reference name="active_player">Active Player</reference> must declare the usage of their abilities before the <reference name="reactive_player">Reactive Player</reference>. Once both players have declared the usage of their abilities, the effects of the abilities  are resolved, starting with the ones of the <reference name="active_player">Active Player</reference>. For example, if both players have abilities that may be activated at the beginning of the <reference name="magic_phase">Magic Phase</reference>, the player whose <reference name="magic_phase">Magic Phase</reference> it is must choose first if they are using their abilities or not. Then the <reference name="reactive_player">Reactive Player</reference> can choose if they are using their abilities or not. After this, the effects of the abilities from both sides are resolved, starting with the <reference name="active_player">Active Player</reference>'s abilities.
+      </subsection>
+    </section>
+
+    <section title="Dice">
+      <subsection title="Rolling Dice">
+        In Fantasy Battles: The 9th Age, dice are often used to determine random outcomes. The most commonly used type is the six-sided dice, named "D6", with a range from 1 to 6. The effects of a dice roll are often depending on whether the rolled value is equal to or higher than a set value (such as a dice roll that is successful if the dice rolls ‘3’ or higher). This is often referred to as a “3+” (or 2+, 4+, 6+, etc.). Sometimes, you are called upon to roll more than one of these dice at the same time. This is represented by a number before the type of dice rolled, such as “3D6”, which means to roll 3 six-sided dice and add the results together. On other occasions, a dice roll may be modified by adding or subtracting a number, such as D6+1. In such cases, simply add the relevant number to or subtract it from the result of the roll. Lastly, <definition name="reroll_dice">some effects in the game call for <reference name="reroll_dice">rerolling certain dice</reference>, such as “failed <reference name="to_wound_roll">to-wound rolls</reference>”, or “<reference name="ward_save">Ward Save</reference> results of '1'”. When you encounter such situations, <reference name="reroll_dice">reroll</reference> the relevant dice.
+
+        <br />
+
+        <important>Dice can only be <reference name="reroll_dice">rerolled</reference> once</important>. The second result is final, no matter the cause/source or result.</definition>
+
+        <br />
+
+        The game sometimes requires to roll a D3. This is performed by rolling a D6 and then halving the result, rounding up, so that the result can only end up being 1, 2 or 3. If the game requires a natural ‘1’ or a natural ‘6’ when rolling D3, it always refers to the value of the D6 before halving.
+      </subsection>
+
+      <subsection title="The Scatter Dice">
+        <definition name="scatter_dice">
+          <reference name="scatter_dice">The Scatter Dice</reference> is a special six-sided dice with two sides marked with "Hit" and four sides marked with an arrow. This dice is typically used in a situation where a projectile or spell effect comes with a risk of deviating in a random direction.
+        </definition>
+
+        <note title="Scatter">
+          <definition name="scatter">
+            When you are called upon to <reference name="scatter">Scatter</reference> an object (for example  " Scatter a Template D6” " ), roll the <reference name="scatter_dice">Scatter Dice</reference>. If a “Hit” symbol is rolled, do not move the object. If an arrow is rolled then roll the specified deviation distance (D6 in this case) and move the object by that number of inches in the direction pointed by the <reference name="scatter_dice">Scatter Dice</reference>. Note that this is not the same thing as <reference name="random_direction">randomizing a direction</reference>.
+          </definition>
+        </note>
+
+        <note title="Representing the Scatter Dice with a standard D6">
+          Alternatively a <reference name="scatter_dice">Scatter Dice</reference> can be represented by rolling a standard six-sided dice and using the side with a single dot to represent the direction of an arrow as depicted on <link to="figure_2">Figure 2</link>. Rolling a result of ‘1’ or ‘6’ is considered a "Hit" with no deviation. Since ‘1’ and ‘6’ are on opposite faces on a standard dice, any result other than ‘1’ or ‘6’ can be interpreted as an arrow.
+        </note>
+      </subsection>
+
+      <figure name="figure_2">
+        <image source="scatter_dice.jpg" />
+        <caption title="Figure 2">Two different ways of representing a <reference name="scatter_dice">Scatter Dice</reference>.</caption>
+      </figure>
+
+      <subsection title="Random Direction">
+        <definition name="random_direction">
+          Certain rules may ask the player to determine a <reference name="random_direction">random direction</reference>. In such cases, roll the <reference name="scatter_dice">Scatter Dice</reference> until an arrow is rolled and then use the direction in which it points. Ignore any “Hit” result; in this special case you are allowed to <reference name="reroll_dice">reroll</reference> an already <reference name="reroll_dice">rerolled dice</reference>. Some <reference name="scatter_dice">Scatter Dice</reference> feature a small arrow within the “Hit” symbol. If that is the case you do not need to <reference name="reroll_dice">reroll</reference> “Hit” results, simply use the small arrow to determine the direction.
+        </definition>
+      </subsection>
+    </section> 
+
+    <section title="Templates">
+
+      <definition name="template">
+      <reference name="template">Templates</reference> are used to determine areas of effect. There are several different types and sizes of <reference name="template">Templates</reference>. The most commonly used <reference name="template">Templates</reference> are 3” and 5” Templates. These are disk­shaped <reference name="template">Templates</reference> with a 3” and 5” diameter respectively. Other less commonly used <reference name="template">Templates</reference> include the 1” round Template (called 1” Template) and the <reference name="line_template">Line Template</reference> (used for <reference name="cannon">Cannons</reference> and some spells). </definition> When determining how many <reference name="model">models</reference> are beneath (or touched by) the <reference name="template">Template</reference>, hold the appropriate <reference name="template">Template</reference> over the target to see which model <reference name="base">bases</reference> are directly underneath it. If any part of a <reference name="model">model</reference>’s <reference name="base">base</reference> is beneath a <reference name="template">Template</reference> (however small that part is), that <reference name="model">model</reference> counts as being under the <reference name="template">Template</reference>. Any given point on a <reference name="template">Template</reference> can only ever be in contact with one <reference name="base">base</reference>. The <reference name="model">model</reference> <reference name="base">bases</reference> are based on the metric system, while the <reference name="template">Template</reference> sizes are in inches. This means, for example, that a <reference name="template">3” Template</reference> is capable of touching the bases of 5 lined up models with 25mm bases (3” = 7.62cm).
+
+      <subsection title="Template Hits">
+        This diagram shows the maximum number of <reference name="model">models</reference> that can be hit for each <reference name="template">template</reference> size. Green bases are 20x20mm, magenta bases are 25x25mm, cyan bases are 40x40mm and orange bases are 25x50mm.
+
+        <illustration>
+          <image source="template_hits_1.jpg" />
+          <image source="template_hits_2.jpg" />
+        </illustration>
+      </subsection>
+
+      <subsection title="Line Template">
+        <definition name="line_template">
+          A <reference name="line_template">Line Template</reference> is a straight line drawn between two points.  All <reference name="model">models</reference> underneath this line are considered under the <reference name="template">Template</reference>.
+        </definition>
+
+        Alternatively, the number of <reference name="model">models</reference> hit by a <reference name="line_template">Line Template</reference> can be determined by adding up the number of ranks and the number of files of the formation that are touched by the line, and subtract one.
+
+        <illustration>
+          <image source="line_template.jpg" />
+        </illustration>
+      </subsection>
+    </section>
+  </chapter>
+
+  <!-- CHAPTER : Battlefield Logistics -->
+
+  <chapter title="Battlefield Logistics">
+    <section title="Measuring Distances">
+        The measuring unit in Fantasy Battles: The 9th Age, is the inch ("). An inch corresponds to 2.54 cm. All distances and ranges are indicated and measured in inches. To determine the distance between two points on the Battlefield (or two <reference name="unit">units</reference>, or any other elements), you must always measure from the closest points, even if the line of measuring goes through any kind of intervening or obstructing element. Ignore such obstructions for the purposes of measurement.
+
+        <br />
+
+        <definition name="in_range">
+          The rules often refer to things being within a certain distance. Measure the distance between the closest points. If this distance is less than the given range, they are considered to be within range. This means that a <reference name="model">model</reference> is always within range of itself and that the entire <reference name="model">model</reference>/<reference name="unit">unit</reference> does not need to be within range, only a fraction of it.
+        </definition>
+
+        <br />
+
+        <important>Players are always allowed to measure any distance at any time.</important>
+    </section>
+
+    <section title="Line of Sight">
+      <definition name="line_of_sight">
+        A <reference name="model">model</reference> can trace a <reference name="line_of_sight">Line of Sight</reference> to its target (a point or <reference name="model">model</reference>) if you can extend a straight line from the front of its <reference name="base">base</reference> directly to its target, without going outside of the <reference name="model">model</reference>'s front <reference name="arc">arc</reference>, and without being interrupted by <reference name="obscuring_terrain">Obscuring Terrain</reference> or by the <reference name="base">base</reference> of a <reference name="model">model</reference> which has a larger <reference name="height">Height</reference> than both the <reference name="unit">unit</reference> and its target. <reference name="model">Models</reference> in back ranks always draw <reference name="line_of_sight">Line of Sight</reference> as if they were in the front rank, in the same file(s) they are in. A <reference name="unit">unit</reference> is considered to have a <reference name="line_of_sight">Line of Sight</reference> to a target if one or more <reference name="model">models</reference> in the <reference name="unit">unit</reference> has <reference name="line_of_sight">Line of Sight</reference>. <reference name="model">Models</reference> in a <reference name="unit">unit</reference> never block <reference name="line_of_sight">Line of Sight</reference> to other <reference name="model">models</reference> in the same <reference name="unit">unit</reference>.
+      </definition>
+
+      <subsection title="Model Height">
+        <definition name="height">Models are divided into the following three <reference name="height">Heights</reference>:
+
+          <note title="Small">
+            Any <reference name="model">model</reference> with one of the following <reference name="troop_type">Troop Types</reference>: <reference name="infantry">Infantry</reference>, <reference name="war_beast">War Beast</reference>, <reference name="swarm">Swarm</reference> and <reference name="war_machine">War Machine</reference>.
+          </note>
+
+          <note title="Medium">
+            Any <reference name="model">model</reference> with one of the following <reference name="troop_type">Troop Types</reference>: <reference name="cavalry">Cavalry</reference>, <reference name="monstrous_infantry">Monstrous Infantry</reference>, <reference name="monstrous_beast">Monstrous Beast</reference>, <reference name="monstrous_cavalry">Monstrous Cavalry</reference> and <reference name="chariot">Chariot</reference>.
+          </note>
+
+          <note title="Large">
+            Any <reference name="model">model</reference> with the <reference name="large_target">Large Target</reference> special rule.
+          </note>
+        </definition>
+      </subsection>
+    </section>
+
+    <section title="Unit Spacing">
+      <definition name="unit_spacing">
+        All <reference name="unit">units</reference> must under normal circumstances be separated by more than  1” from any other <reference name="unit">units</reference> (friends or foes) and from <reference name="impassable_terrain">Impassable Terrain</reference>.  A <reference name="unit">unit</reference> may come within  1⁄2” of these elements during the course of a move but must be kept more than 1” away once the move ends.  Certain forms of movement are specifically allowed to break this spacing rule, with the best example being a <reference name="charge">charge</reference> which allows a <reference name="unit">unit</reference> to engage enemies in <reference name="close_combat">Close Combat</reference>.
+      </definition>
+      Other types of moves may allow a <reference name="unit">unit</reference> to come closer than 1” to friendly units or <reference name="impassable_terrain">Impassable Terrain</reference> but only a charge allows direct contact with enemy <reference name="unit">units</reference>. If a unit is allowed to temporarily break the spacing rule for one reason or another, it ignores the <reference name="unit_spacing">Unit Spacing</reference> rule with regards to the unit or <reference name="impassable_terrain">Impassable Terrain</reference> that it is closer than 1” to, for as long as it remains closer than 1” to this (it may however still not move into <reference name="base_contact">base contact</reference> with an enemy <reference name="unit">unit</reference> without charging it). Once the <reference name="unit">units</reference> are separated by more than 1”, the <reference name="unit_spacing">Unit Spacing</reference> rule automatically begins to apply again.
+    </section>
+
+    <section title="Board Edge">
+      The <reference name="board_edge">board edge</reference> represents the boundaries of the game. <reference name="model">Models</reference> can move temporarily outside the <reference name="board_edge">board edge</reference> on the condition that no more than 50% of any <reference name="model">model</reference>'s <reference name="footprint">Footprint</reference> is outside the board and as long as the move does not end with any part of the <reference name="model">model</reference> outside the board. <reference name="template">Templates</reference> can be partially outside the board and still affect <reference name="model">models</reference> with the parts of the <reference name="template">Template</reference> that are still on the board.
+    </section>
+  </chapter>
+
+  <!-- CHAPTER : Characteristics -->
+
+  <chapter title="Characteristics">
+    <section title="The Characteristics Profile">
+      <definition name="characteristics_profile">
+        Each <reference name="model_part">model part</reference> has a <reference name="characteristics_profile">Characteristics Profile</reference>, which contains 9 different <reference name="characteristics">Characteristics</reference>:
+
+        <table>
+          <row>
+            <header>M</header>
+            <cell><reference name="movement">Movement</reference></cell>
+            <cell><definition name="movement">The movement speed of the <reference name="model">model</reference>, in inches.</definition></cell>
+          </row>
+          <row>
+            <header>WS</header>
+            <cell><reference name="weapon_skill">Weapon Skill</reference></cell>
+            <cell><definition name="weapon_skill">How likely it is for the <reference name="model">model</reference> to <reference name="to_hit_close_combat">land hits</reference> and avoid <reference name="to_hit_close_combat">being hit</reference> in <reference name="close_combat">close combat</reference>.</definition></cell>
+          </row>
+          <row>
+            <header>BS</header>
+            <cell><reference name="ballistic_skill">Ballistic Skill</reference></cell>
+            <cell><definition name="ballistic_skill">How likely it is for the <reference name="model">model</reference> to <reference name="to_hit_ranged">land a hit</reference> with <reference name="shooting_weapon">ranged weapons</reference>.</definition></cell>
+          </row>
+          <row>
+            <header>S</header>
+            <cell><reference name="strength">Strength</reference></cell>
+            <cell><definition name="strength">The higher the <reference name="strength">strength</reference>, the easier it is <reference name="to_wound">to wound</reference> other <reference name="model">models</reference> and crush <reference name="armour">armour</reference>.</definition></cell>
+          </row>
+          <row>
+            <header>T</header>
+            <cell><reference name="toughness">Toughness</reference></cell>
+            <cell><definition name="toughness">A high <reference name="toughness">toughness</reference> allows to withstand blows more easily.</definition></cell>
+          </row>
+          <row>
+            <header>W</header>
+            <cell><reference name="wounds">Wounds</reference></cell>
+            <cell><definition name="wounds">When the <reference name="model">model</reference> loses this many <reference name="wounds">wounds</reference>, it is removed as a casualty.</definition></cell>
+          </row>
+          <row>
+            <header>I</header>
+            <cell><reference name="initiative">Initiative</reference></cell>
+            <cell><definition name="initiative"><reference name="model">Models</reference> with a higher <reference name="initiative">initiative</reference> strike first.</definition></cell>
+          </row>
+          <row>
+            <header>A</header>
+            <cell><reference name="attacks">Attacks</reference></cell>
+            <cell><definition name="attacks">The number of times the <reference name="model">model</reference> can <reference name="close_combat_attacks">attack</reference> in <reference name="close_combat">close combat</reference>.</definition></cell>
+          </row>
+          <row>
+            <header>Ld</header>
+            <cell><reference name="leadership">Leadership</reference></cell>
+            <cell><definition name="leadership">Shows the <reference name="model">model</reference>'s discipline and ability to stand and fight.</definition></cell>
+          </row>
+        </table>
+
+        <definition name="characteristics">All <reference name="characteristics">Characteristics</reference> have a numeric value between 0 and 10 and can never go outside this range.</definition>
+
+        <note title="Value of 0">
+          When a <reference name="characteristics">Characteristic</reference> value is 0, it can also be labelled as a dash (“-”) or an asterisk “*”.
+
+          <table>
+            <row>
+              <cell>0 <reference name="weapon_skill">Weapon Skill</reference></cell>
+              <cell>The <reference name="model_part">model part</reference> is automatically hit in <reference name="close_combat"> Close Combat</reference> and can only <reference name="to_hit_close_combat">hit</reference> in <reference name="close_combat">Close Combat</reference> on 6+.</cell>
+            </row>
+            <row>
+              <cell>0 <reference name="ballistic_skill">Ballistic Skill</reference></cell>
+              <cell>The <reference name="model_part">model part</reference> cannot use <reference name="shooting_weapon">Shooting Weapons</reference>.</cell>
+            </row>
+            <row>
+              <cell>0 <reference name="strength">Strength</reference></cell>
+              <cell>Attacks with <reference name="strength">Strength</reference> 0 cannot wound.</cell>
+            </row>
+            <row>
+              <cell>0 <reference name="toughness">Toughness</reference></cell>
+              <cell>Attacks <reference name="to_wound">rolling to wound</reference> against a <reference name="model">model</reference> with <reference name="toughness">Toughness</reference> 0 <reference name="to_wound">wound</reference> on 2+.</cell>
+            </row>
+            <row>
+              <cell>0 <reference name="wounds">Wounds</reference></cell>
+              <cell>A <reference name="model">model</reference> with its <reference name="wounds">Wounds</reference> reduced to 0 is removed as a casualty.</cell>
+            </row>
+            <row>
+              <cell>0 <reference name="attacks">Attacks</reference></cell>
+              <cell>A <reference name="model_part">model part</reference> with an unmodified <reference name="attacks">Attacks</reference> of 0 can never make normal <reference name="close_combat_attacks">Close Combat Attacks</reference>.</cell>
+            </row>
+          </table>
+        </note>
+      </definition>
+    </section>
+
+    <section title="Performing a Characteristic Test">
+      <definition name="characteristic_test">
+        To perform a <reference name="characteristic_test">Characteristic Test</reference>, roll a D6. If the result is less or equal than the tested <reference name="characteristics">Characteristic</reference>, the test is passed. Otherwise the test is failed. A test always fails on the result of ‘6’. This means that <reference name="model">models</reference> that have a <reference name="characteristics">Characteristic</reference> with a value of 0 will automatically fail <reference name="characteristic_test">Characteristic Tests</reference> targeting that <reference name="characteristics">Characteristic</reference>.
+      </definition>
+
+      <br />
+
+      When a <reference name="model">model</reference> with more than one value of a <reference name="characteristics">Characteristic</reference> (such as a horse and its rider) is called upon to take a <reference name="characteristic_test">Characteristic Test</reference>, take a single test for the <reference name="multipart_model">combined model</reference>, using the highest <reference name="characteristics">Characteristic</reference> available. When a <reference name="unit">unit</reference> as a whole takes a <reference name="characteristic_test">Characteristic Test</reference>, use the highest value.
+
+      <subsection title="Using Unmodified Characteristics">
+        <definition name="unmodified_characteristics">
+          An <reference name="unmodified_characteristics">unmodified Characteristic</reference> is the exact value that can be read on a <reference name="unit">unit</reference> <reference name="characteristics_profile">profile</reference> when ignoring any modification from <reference name="equipment">equipment</reference>, <reference name="spell">spells</reference> and rules. The only exceptions are <reference name="characteristics">Characteristic</reference> changes made when building the army, such as upgrading a <reference name="model">model</reference> to a ‘<reference name="veteran">veteran</reference>', thereby granting for example +1 <reference name="strength">Strength</reference> on its <reference name="characteristics_profile">profile</reference>. Such a modification is considered included in the <reference name="model">model</reference>'s <reference name="unmodified_characteristics">unmodified Characteristic</reference>.
+        </definition>
+      </subsection>
+
+
+      <subsection title="Using Borrowed Characteristics" name="borrowed_characteristics">
+        In certain situations a <reference name="model">model</reference> may borrow or use the <reference name="characteristics">Characteristic</reference> of another <reference name="model">model</reference>. In this case the value of the <reference name="borrowed_characteristics">borrowed Characteristic</reference> is taken after applying any modification from <reference name="equipment">equipment</reference>, <reference name="spell">spells</reference> or special rules that the owner of the <reference name="characteristics">Characteristic</reference> is subject to. Modification from <reference name="equipment">equipment</reference>, <reference name="spell">spells</reference> or special rules that affects the <reference name="unit">unit</reference> will then be applied to this (following the rules for <reference name="priority_of_modifiers">Priority of Modifiers</reference> below).
+      </subsection>
+
+      <subsection title="Performing a Leadership Test">
+        <definition name="leadership_test">
+          To perform a <reference name="leadership_test">Leadership Test</reference> the player rolls 2D6 and compares the result with the <reference name="leadership">Leadership Characteristic</reference> of a <reference name="model">model</reference>. If the roll result is equal or less then the <reference name="leadership">Leadership</reference> value, the test is passed. Otherwise, the <reference name="leadership_test">Test</reference> is failed.  If a <reference name="unit">unit</reference> takes a <reference name="leadership_test">Leadership Test</reference> and more than one <reference name="leadership">Leadership</reference> value is available (for example when a <reference name="character">Character</reference> joins a <reference name="unit">unit</reference>), the player may choose which <reference name="leadership">Leadership</reference> value to use.
+        </definition>
+
+        <br />
+
+
+        There are many different game mechanics that may call for a <reference name="leadership_test">Leadership Test</reference>, such as performing a <reference name="panic_test">Panic Test</reference> or a <reference name="break_test">Break Test</reference>. All such game mechanics are <reference name="leadership_test">Leadership Tests</reference>, regardless of any additional rules and modifications described in the relevant sections of the rulebook.
+      </subsection>
+
+      <subsection title="Priority of Modifiers" name="priority_of_modifiers">
+        When <reference name="characteristics">Characteristics</reference> are modified, the modifiers are applied in a strict order:
+        <sequence>
+          <item><reference name="borrowed_characteristics">Characteristics borrowed</reference>* or set to certain values (such as <reference name="inspiring presence">Inspiring Presence</reference> or a failed <reference name="fear_test">Fear Test</reference>)</item>
+          <item>Multiplications (such as halved, doubled or multiplied by 3). Unless noted otherwise, round fractions up.</item>
+          <item>Addition and Subtraction (such as ­1 or +3).</item>
+        </sequence>
+        *If the <reference name="characteristics">Characteristic</reference> to be borrowed is modified, apply these modifiers before <reference name="borrowed_characteristics">borrowing the Characteristic</reference>.
+        If several modifications within the same group are to be applied, first apply modifications without a maximum/minimum value, then apply modifications with a maximum/minimum value (for example, "­1 <reference name="initiative">Initiative</reference>, to a minimum of 1"). After that, apply modifications chronologically, starting with the modifier that was applied first. Remember that <reference name="characteristics">Characteristics</reference> can never (not even temporarily) be modified to above 10 or below 0.
+      </subsection>
+    </section>
+  </chapter>
+
+  <!-- CHAPTER : Characteristics -->
+
+  <chapter title="Setting up a Game">
+    <section title="Building an Army">
+      Fantasy Battles: The 9th Age includes a series of Army Books which contain descriptions of the different armies. Each army has unique <reference name="character">characters</reference>, troops and rules.  <reference name="character">Characters</reference> are divided into <reference name="lord">Lords</reference> and <reference name="hero">Heroes</reference>.  Troops  are divided into <reference name="core">Core</reference>, <reference name="special">Special</reference> and <reference name="rare">Rare</reference>.
+
+      <br />
+
+      <!-- TODO: Include graphics -->
+
+      <definition name="army_list">
+        The first step to building an army is to write down a selection of <reference name="unit">units</reference>, options and their <reference name="point_cost">Point Costs</reference> on a document, called the “<reference name="army_list">Army List</reference>”. The exact composition of an army is subject to certain rules and restrictions which the following chapter will describe in detail.
+      </definition>
+
+      <subsection title="Point Costs">
+        <definition name="point_cost">
+          Each <reference name="unit">unit</reference>, weapon, upgrade, <reference name="magical_item">Magical Item</reference> etc. costs a certain amount of points. A <reference name="unit">unit</reference>’s <reference name="point_cost">Point Cost</reference> is the sum of the <reference name="point_cost">Point Costs</reference>  of all its <reference name="model">models</reference> and upgrades. An army <reference name="point_cost">Point Cost</reference> is the sum of all its <reference name="unit">unit</reference>’s <reference name="point_cost">Point Costs</reference>.
+        </definition>
+
+        <note title="Half a Point">
+          <reference name="unit">Units</reference>’ cost must be integer. If an upgrade costs 0.5 point (written as “1 pts / two <reference name="model">models</reference>”) the <reference name="unit">unit</reference>’s cost is always rounded up.
+        </note>
+
+        <note title="Lord / Hero Upgrades">
+          If the price of an upgrade or a <reference name="magical_item">Magical Item</reference> is written with a slash (for example “50 pts / 40 pts”), the first number represents the <reference name="point_cost">Point Cost</reference> for a <reference name="lord">Lord</reference> <reference name="character">Character</reference>, while the second gives the cost for a <reference name="hero">Hero</reference> <reference name="character">Character</reference> or a <reference name="champion">Champion</reference>.
+        </note>
+      </subsection>
+
+    </section>
+
+    <section title="Army Restrictions">
+      An army in Fantasy Battles: The 9th Age is subject to basic composition rules:
+
+      <list>
+        <item title="Army Points">
+          The combined <reference name="point_cost">points value</reference> of every <reference name="unit">unit</reference> in the army, including options and <reference name="equipment">equipment</reference>, must not exceed the determined <reference name="point_limit">point limit</reference> for the battle. An army may fall below the <reference name="point_limit">limit</reference> only by 20 points or less.
+        </item>
+
+        <item title="Unit Categories">
+          <definition name="category">
+            All units are separated into five <reference name="category">Categories</reference>. The number of points one can spend on these <reference name="category">Categories</reference> differs. Additionally the same <reference name="unit">unit</reference> can only be taken a limited number of times.
+          </definition>
+
+          <table>
+            <headers title="">
+              <header>Point limit</header>
+              <header>Duplicate limit</header>
+            </headers>
+            <row>
+              <header><reference name="core">Core</reference></header>
+              <cell>at least 25%</cell>
+              <cell>max 4</cell>
+            </row>
+            <row>
+              <header><reference name="special">Special</reference></header>
+              <cell>-</cell>
+              <cell>max 3</cell>
+            </row>
+            <row>
+              <header><reference name="rare">Rare</reference></header>
+              <cell>max 25%</cell>
+              <cell>max 2</cell>
+            </row>
+            <row>
+              <header><reference name="hero">Heroes</reference></header>
+              <cell>max 50%</cell>
+              <cell>max 3</cell>
+            </row>
+            <row>
+              <header><reference name="lord">Lords</reference></header>
+              <cell>max 35%</cell>
+              <cell>max 3</cell>
+            </row>
+            <row>
+              <header><reference name="hero">Heroes</reference> + <reference name="lord">Lords</reference></header>
+              <cell>max 50%</cell>
+              <cell>-</cell>
+            </row>
+          </table>
+
+          Under some special conditions <reference name="unit">units</reference> can be moved from one <reference name="category">Category</reference> to another. For example, in some cases the rules say it is allowed to take <reference name="chariot">Chariots</reference> as <reference name="core">Core</reference> choice instead of <reference name="special">Special</reference> choice. In such cases the unit must abide by both the duplicate limit from its former <reference name="category">Category</reference> and its new one, but the points limit is only taken from the new <reference name="category">Category</reference>. I.e. you may not include more than 3 <reference name="chariot">Chariots</reference>, but the <reference name="chariot">Chariots</reference> will count towards the needed 25% of points in <reference name="core">Core</reference>.
+        </item>
+        <item title="Minimum Army Size">
+          Every army must contain a  minimum of 4 <reference name="unit">units</reference> excluding the <reference name="character">Characters</reference>. For this purpose, all <reference name="unit">units</reference> with the <reference name="war_machine">War Machine</reference> <reference name="troop_type">Troop Type</reference> count together as one.
+        </item>
+        <item title="The General">
+          One <reference name="character">Character</reference> in the army must be named the <reference name="general">General</reference>. Therefore there must be at least one <reference name="hero">Hero</reference> or <reference name="lord">Lord</reference> included in the army who is eligible to fulfil this role. An Army can only have one <reference name="general">General</reference>.
+        </item>
+        <item title="One of a Kind and One per Army">
+          <definition name="one_per_army"><definition name="one_of_a_kind">
+            <reference name="unit">Units</reference>, upgrades and items marked as “<reference name="one_of_a_kind">One of a Kind</reference>” and “<reference name="one_per_army">One per Army</reference>” may only be taken once per army. “<reference name="one_of_a_kind">One of a Kind</reference>” can be taken twice per <reference name="grand_army">Grand Army</reference>.
+          </definition></definition>
+        </item>
+        <item title="0-X Choice">
+          <definition name="0x_choice">
+            Some units are marked with “<reference name="0x_choice">0-X Choices</reference>” (for example “<reference name="0x_choice">0-2 Choice</reference>”). This means that such units can be taken from zero to X times, and ignore the normal duplication limits. The maximum limit (X) is halved for <reference name="warband">Warbands</reference> and doubled for <reference name="grand_army">Grand Armies</reference>, rounds fractions up.
+          </definition>
+        </item>
+      </list>
+    </section>
+
+    <section title="Warbands and Grand Armies">
+      The rules for army composition are modified depending on the size of an army. An army that is unusually small or unusually large is subject to the following rules.
+
+      <subsection title="Warbands">
+        <definition name="warband">
+          Armies of 1500 points or less are called <reference name="warband">Warbands</reference>. The minimum army size is decreased to 3 <reference name="unit">units</reference>.
+        </definition>
+
+        <table title="Warband Duplicate Limit">
+          <row>
+            <header><reference name="core">Core</reference></header>
+            <cell>max 2</cell>
+          </row>
+          <row>
+            <header><reference name="special">Special</reference></header>
+            <cell>max 2</cell>
+          </row>
+          <row>
+            <header><reference name="rare">Rare</reference></header>
+            <cell>max 1</cell>
+          </row>
+          <row>
+            <header><reference name="hero">Heroes</reference> &amp; <reference name="lord">Lords</reference></header>
+            <cell>max 2</cell>
+          </row>
+          <row>
+            <header><reference name="one_of_a_kind">One of a Kind</reference></header>
+            <cell>max 1</cell>
+          </row>
+          <row>
+            <header><reference name="one_per_army">One per Army</reference></header>
+            <cell>max 1</cell>
+          </row>
+          <row>
+            <header><reference name="0x_choice">0-X Choice</reference></header>
+            <cell>half, rounded up</cell>
+          </row>
+        </table>
+      </subsection>
+
+      <subsection title="Grand Armies">
+        <definition name="grand_army">
+          Armies of 4000 points and more are called <reference name="grand_army">Grand Armies</reference>. <reference name="unit">Units</reference> which are marked as <reference name="one_of_a_kind">One of a Kind</reference> can be taken up to 2 times.
+        </definition>
+
+        <table title="Grand Armies Duplicate Limit">
+          <row>
+            <header><reference name="core">Core</reference></header>
+            <cell>max 8</cell>
+          </row>
+          <row>
+            <header><reference name="special">Special</reference></header>
+            <cell>max 6</cell>
+          </row>
+          <row>
+            <header><reference name="rare">Rare</reference></header>
+            <cell>max 4</cell>
+          </row>
+          <row>
+            <header><reference name="hero">Heroes</reference> &amp; <reference name="lord">Lords</reference></header>
+            <cell>max 6</cell>
+          </row>
+          <row>
+            <header><reference name="one_of_a_kind">One of a Kind</reference></header>
+            <cell>max 2</cell>
+          </row>
+          <row>
+            <header><reference name="one_per_army">One per Army</reference></header>
+            <cell>max 1</cell>
+          </row>
+          <row>
+            <header><reference name="0x_choice">0-X Choice</reference></header>
+            <cell>double</cell>
+          </row>
+        </table>
+      </subsection>
+    </section>
+
+    <section title="Hidden or Open Lists ?">
+      Rules are written and balanced based on the principle of openness, i.e. your opponent knows what <reference name="magical_item">Magical Items</reference> your <reference name="model">models</reference> are equipped with. We encourage players to share their full <reference name="army_list">Army Lists</reference> with their opponents at the start of the game. This <reference name="army_list">Army List</reference> should include all <reference name="unit">units</reference>, unit options, <reference name="magical_item">Magical Items</reference>, special abilities, <reference name="point_cost">point costs</reference> and so on. The only things that are not open to your opponent are things that are explicitly stated as hidden or secret (such as in which unit an assassin is hiding). Note that the presence of an assassin in the army (and its equipment) is still open.
+
+      <subsection title="Optional Rules for Hidden Lists">
+        <definition name="hidden_list">
+          Some players may prefer to use so-called <reference name="hidden_list">hidden lists</reference>. For such players, we include the <reference name="hidden_list">hidden list</reference> rules. Please note that the game is not balanced with these rules in mind. In this format, most of your army roster will be open (meaning that your opponent should know what your army consists of before the game starts). However, some parts of your army are secret or “hidden”. Both players should provide their opponent with the open part of their army (a “mundane <reference name="army_list">Army List</reference>”) before the game begins.
+        </definition>
+
+        <br />
+
+        The following is included in the hidden part of your army.
+
+        <sequence>
+          <item><reference name="magical_item">Magical Items</reference> that are picked from the <link to="magical_item_list">common list of Magical Items</link>.</item>
+          <item><reference name="magical_item">Magical Items</reference> that are specific to Army Books, as well as any option that follows the rules for <reference name="magical_item">Magical Items</reference> such as <reference name="daemonic_item">Daemonic Items</reference> and <reference name="dwarven_rune">Dwarven Runes</reference>.</item>
+        </sequence>
+
+
+        Anything not on that list belongs to the open part of the <reference name="army_list">Army List</reference>. In addition, all <reference name="magical_item">Magical Items</reference> (and similar) that have a mundane part should be presented with the open part of your army (such as a <reference name="magical_weapon">Magical Weapon</reference>'s or <reference name="magical_armour">Magical Armour</reference>'s <reference name="equipment_type">type</reference>).
+
+        If an army has two or more <reference name="unit">units</reference> or <reference name="model">models</reference> that are identical regarding their open part but have hidden differences, the player must be able to tell the <reference name="unit">units</reference> apart in the hidden list. For example if a player fields two units identical in every way except that one has a <reference name="magical_standard" type="example">Magical Standard</reference> and the other doesn’t, the <reference name="army_list">Army List</reference> may specify that the <reference name="unit" type="example">unit</reference> with the <reference name="magical_standard" type="example">Magical Standard</reference> has a red banner while the unit with a blue banner possesses no such <reference name="magical_item">Magical Item</reference>.
+
+        <note title="Revealing Magical Items">
+          A <reference name="magical_item">Magical Item</reference> (or similar) must be revealed the first time it is used. An item is considered being used when it affects or could affect the game in any way. For example:
+          <list>
+            <item>It affects a dice roll (even if the actual result of the dice has no effect).</item>
+            <item>It alters an attack (such as a <reference name="magical_weapon">Magical Weapon</reference>, or any item with a special rule that affects an attack).</item>
+            <item>It alters a saving throw (reveal the item before rolling the saving throw). Note that an item that affects the save the same way as the mundane counterpart would (such as many magical <reference name="shield">shields</reference>) does not need to be revealed.</item>
+          </list>
+
+          An item that increases <reference name="movement">movement</reference> only counts as being used if the <reference name="unit">unit</reference> moves further than it could without it or when <reference name="charge">charging</reference> (declare that you have the item before rolling the <reference name="charge_distance">charge distance</reference> but after <reference name="charge_reaction">reactions</reference> are taken). When revealing <reference name="dwarven_rune">Dwarven Runic Items</reference>, only reveal the <reference name="dwarven_rune">rune</reference> that is being used, not the entire combined item.
+        </note>
+      </subsection>
+    </section>
+  </chapter>
+
+  <chapter title="The Pre-Game Sequence">
+    There are several steps that players must go through in order to set up a game of Fantasy Battles: The 9th Age. These steps are referred to as the <reference name="pregrame_sequence">pre-game sequence</reference>. The first and foremost step is to find a suitable opponent and agree on the size of the game. The players may then <reference name="share_army_list">share their Army Lists</reference> and begin <reference name="building_battlefield">building the Battlefield</reference>, followed by <reference name="deployment_type">picking the deployment type</reference>, choosing the <reference name="secondary_objective">Secondary Objectives</reference> of the game, determining <reference name="deployment_zone">Deployment Zones</reference> and <reference name="generating_spells">generating Wizard spells</reference>. The last step will consist of going through what is called the <reference name="deployment_phase">Deployment</reference>.
+
+    <br />
+
+    Before the game can begin, some preparations have to be made.
+
+    <sequence>
+      <item>Decide on <reference name="game_size">Game Size</reference>.</item>
+      <item><reference name="share_army_list">Share Army List</reference> with <reference name="opponent">Opponent</reference>.</item>
+      <item><reference name="building_battlefield">Build the Battlefield</reference>.</item>
+      <item>Pick <reference name="deployment_type">Deployment Type</reference>.</item>
+      <item>Choose <reference name="secondary_objective">Secondary Objectives</reference>.</item>
+      <item>Determine <reference name="deployment_zone">Deployment Zones</reference>.</item>
+      <item><reference name="generating_spells">Generate Spells</reference>.</item>
+      <item><reference name="deployment_phase">Deployment Phase</reference>.</item>
+    </sequence>
+
+    <subsection title="The Size of the Game">
+      <definition name="game_size">
+        In Fantasy Battles: The 9th Age, two armies opposing each other on the battlefield must have roughly the same <reference name="point_cost">point cost</reference>. This ensures that the battle will be decided through the clever strategies and tactics of the players rather than by an unfair difference in army size. The first step to setting up a game is to agree on the <reference name="game_size">total point cost of the army</reference> that each player will bring. This pre­determined <reference name="point_cost">point cost</reference> will henceforth correspond to the <reference name="game_size">size of the game</reference>. Armies are typically worth between 500 and 1000 points for small engagements, between 1000 and 2000 points for serious battles and beyond 2000 points for mighty clashes between epic armies.
+      </definition>
+    </subsection>
+
+    <subsection title="Sharing Army Lists">
+      <definition name="share_army_list">
+        After deciding the <reference name="game_size">size of the game</reference>, the next step is for both players to swap <reference name="army_list">Army Lists</reference> and share all relevant information about the upcoming game. </definition>
+
+      Alternatively, the players may agree to keep certain aspects about their armies secret, which they will progressively reveal during the course of the game. For more information please see the <reference name="hidden_list">section on Hidden Lists</reference>.
+    </subsection>
+
+    <subsection title="Building the Battlefield">
+      <definition name="building_battlefield">
+        <definition name="battlefield">
+          A game of Fantasy Battles: The 9th Age is played on a board that is 72” wide and 48” deep. For smaller battles involving <reference name="warband">Warbands</reference>, it is recommended to use a board that is 36” wide and 48” deep, while for bigger games involving <reference name="grand_army">Grand Armies</reference> it is recommended to adjust the size depending on the size of the armies. While some battles may take place on a completely flat board, a <reference name="battlefield">Battlefield</reference> typically has <reference name="terrain_features">Terrain Features</reference> placed upon it.
+        </definition>
+
+        The players can freely agree on the size, type and number of <reference name="terrain_features">Terrain Features</reference> to be placed, as well as their positions. If an agreement cannot be reached, the game provides the following default rules for setting up a randomly generated <reference name="battlefield">Battlefield</reference>.
+      </definition>
+
+      <list>
+        <item>First, divide the gaming board into 24”x24” sections (18”x24” if the board is 36”x48”).</item>
+        <item>
+          Place the following <reference name="terrain_feature">Terrain Features</reference> in the centre of a randomly selected section (max 1 piece in each section):
+          <list>
+            <item>One <reference name="building">Building</reference> or <reference name="impassable_terrain">Impassable Terrain</reference> (randomly decide which of the two),</item>
+            <item>one <reference name="hill">Hill</reference>, and</item>
+            <item>one <reference name="forest">Forest</reference>.</item>
+          </list>
+          Then move each <reference name="terrain_feature">Terrain</reference> piece 2D6” in a <reference name="random_direction">random direction</reference>.
+        </item>
+        <item>
+          Next,add 2D3 (1D3 if the board is 36”x48”) additional pieces of <reference name="terrain_feature">Terrain</reference> following the rules above to determine their position. Roll a D6 and consult the table below to determine the type of each additional <reference name="terrain_feature">Terrain Feature</reference>.
+          <sequence>
+            <item><reference name="hill">Hill</reference></item>
+            <item><reference name="forest">Forest</reference></item>
+            <item><reference name="field">Field</reference></item>
+            <item><reference name="water">Water</reference></item>
+            <item><reference name="wall">Wall</reference></item>
+            <item><reference name="ruin">Ruin</reference></item>
+          </sequence>
+        </item>
+        <item>
+          All <reference name="terrain_feature">Terrain Features</reference> must be placed at least 6” away from each other. You may move the pieces as little as possible from their rolled position in order to meet this criterion. If it is not possible to place the <reference name="terrain_feature">Terrain piece</reference> more than 6” away from any other <reference name="terrain_feature">Terrain</reference> then discard the problematic piece.
+        </item>
+        <item>
+          Recommended <reference name="terrain_feature">Terrain piece</reference> sizes are between 6”x8” and 6”x10” except for <reference name="wall">Walls</reference> which are 1”x10”.
+        </item>
+      </list>
+    </subsection>
+
+    <subsection title="Deployment Type">
+      <definition name="deployment_type">
+        Players may agree on which <reference name="deployment_type">deployment type</reference> to use or may want to randomize this variable by rolling a D6 and consulting the following table.
+
+        <table>
+          <headers>
+            <header>1-3: <reference name="deployment_type_classic">Classic</reference></header>
+            <header>4-5: <reference name="deployment_type_diagonal">Diagonal</reference></header>
+            <header>6: <reference name="deployment_type_flank">Flank Attack</reference></header>
+          </headers>
+          <row>
+            <cell>
+              <definition name="deployment_type_classic">
+                The <reference name="table">Table</reference> is divided into halves by the straight line through the centre of the board, parallel to the table's long edges. <reference name="deployment_zone">Deployment Zones</reference> are areas more than 12" away from this line.
+              </definition>
+            </cell>
+            <cell>
+              <definition name="deployment_type_diagonal">
+                The <reference name="table">Table</reference> is divided into halves by a diagonal line across the table. Whoever gets to choose the <reference name="deployment_zone">Deployment Zone</reference> decides which diagonal to use. <reference name="deployment_zone">Deployment Zones</reference> are areas more than 9” away from this line.
+              </definition>
+            </cell>
+            <cell>
+              <definition name="deployment_type_flank">
+                The <reference name="table">Table</reference> is divided into halves by drawing a straight line through the centre of the board, parallel to the table's long edges. The player who gets to choose the <reference name="deployment_zone">Deployment Zone</reference> decides if they want to be the attacker or the defender. The attacker may deploy more than 9" from the central line if within 1⁄4 of the table's length from either table edge (18" on a 72” table), and more than 15" from the central line elsewhere. The defender does the opposite: more than 15" away from the central line if within 1⁄4 of the table's length from the table’s short edges, and more than 9" away from the central line elsewhere.
+              </definition>
+            </cell>
+          </row>
+        </table>
+      </definition>
+
+      <figure name="figure_3">
+        <image source="deployment_types.jpg" />
+        <caption title="Figure 3">
+          Visualisation of the three different <reference name="deployment_type">deployment types</reference>.
+        </caption>
+      </figure>
+    </subsection>
+
+    <subsection title="Secondary Objectives">
+      <definition name="secondary_objective">
+        Before picking <reference name="deployment_zone">Deployment Zones</reference>, the players can agree to pick one or more <reference name="secondary_objective">Secondary Objectives</reference> (if any at all), or they can randomly choose by rolling a D6 and consulting the table below.
+
+        <table>
+          <row>
+            <header>1-2</header>
+            <cell><reference name="hold_the_ground">Hold the Ground</reference></cell>
+          </row>
+          <row>
+            <header>3-4</header>
+            <cell><reference name="breakthrough">Breakthrough</reference></cell>
+          </row>
+          <row>
+            <header>5</header>
+            <cell><reference name="capture_the_flags">Capture the Flags</reference></cell>
+          </row>
+          <row>
+            <header>6</header>
+            <cell><reference name="secure_target">Secure Target</reference></cell>
+          </row>
+        </table>
+      </definition>
+
+      <note title="Hold the Ground">
+        <definition name="hold_the_ground">
+          Secure and hold the <reference name="battlefield">Battlefield</reference> centre. Place a marker to show the centre of the <reference name="board">Board</reference> if needed.
+        </definition>
+      </note>
+
+      <note title="Breakthrough">
+        <definition name="breakthrough">
+          Invade the enemy territory.  Keep track of the <reference name="deployment_zone">Deployment Zones</reference>.
+        </definition>
+      </note>
+
+      <note title="Capture the Flags">
+        <definition name="capture_the_flags">
+          Valuable targets must be annihilated.  After moving <reference name="vanguard">Vanguards</reference>, before determining who has the first <reference name="player_turn">Player Turn</reference>, both players take turns in openly choosing three enemy <reference name="standard_bearer">Standard Bearers</reference> (excluding the <reference name="battle_standard_bearer">Battle Standard Bearer</reference>), or will choose all <reference name="standard_bearer">Standard Bearers</reference> if there are fewer than three in the army. <reference name="standard_bearer">Standard Bearers</reference> with <reference name="light_troop">Light Troops</reference> cannot be chosen. The player that finished deploying first chooses the first <reference name="standard_bearer">Standard Bearer</reference>. <reference name="standard_bearer">Standard Bearers</reference> not currently on the <reference name="table">table</reference> (such as <reference name="ambush">Ambushing units</reference>) may still be chosen.
+        </definition>
+      </note>
+
+      <note title="Secure Target">
+        <definition name="secure_target">
+          Critical resources must not fall into enemy hands.  After determining <reference name="deployment_zone">Deployment Zones</reference>, both players place one marker on the <reference name="battlefield">Battlefield</reference>, starting with the player that picked <reference name="deployment_zone">Deployment Zone</reference>. Each player has to place the marker more than 12" away from their <reference name="deployment_zone">Deployment Zone</reference> and 24" away from the other marker.
+        </definition>
+        
+        <br />
+
+        See section <link to="scoring_and_victory_conditions">Scoring and Victory Conditions</link> for more details on how to <reference name="capture_objective">capture an objective</reference> and the impact on the <reference name="victory_points">Victory Points</reference> at the end of the game.
+      </note>
+    </subsection>
+
+    <subsection title="Deployment Zones">
+      <definition name="deployment_zone">
+        In a <reference name="deployment_type_classic">Classic deployment type</reference> the players must pick one of the long board edges as their <reference name="deployment_zone">Deployment Zone</reference>, while in a <reference name="deployment_type_diagonal">Diagonal deployment type</reference>, the players must pick one of the corners. In a <reference name="deployment_type_flank">Flank Attack deployment type</reference> the players must decide who is the attacker or defender. To determine which player uses which <reference name="deployment_zone">Deployment Zone</reference>, randomize the player that chooses their <reference name="deployment_zone">Deployment Zone</reference>. For example, a player may roll a D6 and get to choose on a 4+.
+      </definition>
+    </subsection>
+
+    <subsection title="Generating Spells">
+      <definition name="generating_spells">
+        Starting with the player that picked their <reference name="deployment_zone">Deployment Zone</reference>, each player must now generate <reference name="spell">spells</reference> for all their <reference name="wizard">Wizards</reference>. To do this, pick a <reference name="wizard">Wizard</reference> and consult the chosen <reference name="path_of_magic">Path of Magic</reference> (the <reference name="path_of_magic">Path</reference> used by the <reference name="wizard">Wizard</reference> must be noted on the <reference name="army_list">Army List</reference>). All <reference name="path_of_magic">Magic Paths</reference> can be found in <link to="book_path_of_magic">Fantasy Battles: The 9th Age: Paths of Magic</link>. All <reference name="path_of_magic">Paths</reference> contain <reference name="spell">spells</reference> numbered 0 through 6. Roll a D6 for each <reference name="spell">spell</reference> the <reference name="wizard">Wizard</reference> has (normally the same number as its <reference name="wizard_level">Wizard Level</reference>) to see which <reference name="spell">spells</reference> the <reference name="wizard">Wizard</reference> can use in this battle. If a '1' is rolled, the <reference name="wizard">Wizard</reference> knows the <reference name="spell">spell</reference> number 1, and so on. If a duplicate <reference name="spell">spell</reference> is rolled (either because another <reference name="wizard">Wizard</reference> in the same army has already rolled the <reference name="spell">spell</reference> or because the same <reference name="wizard">Wizard</reference> rolled a double), the <reference name="wizard">Wizard</reference> must replace the duplicate result with another freely chosen <reference name="spell">spell</reference> from the same <reference name="path_of_magic">Path</reference> that has not already been rolled. Two <reference name="wizard">Wizards</reference> in the same army cannot know the same <reference name="spell">spell</reference>, and no <reference name="wizard">Wizard</reference> can know a single <reference name="spell">spell</reference> more than once (if you are unable to replace the duplicate <reference name="spell">spell</reference> with an unoccupied <reference name="spell">spell</reference>, the <reference name="spell">spell</reference> is lost). The <reference name="wizard">Wizard</reference> may always exchange one of its spells for the <reference name="signature_spell">signature spell</reference> of that <reference name="path_of_magic">Magic Path</reference> (labelled as spell number 0). This <reference name="spell">spell</reference> can be chosen even if other Wizards already have that <reference name="spell">spell</reference>.
+
+        <br />
+
+        <reference name="spell">Spells</reference> that are not generated using these rules (such as <reference name="spell">spells</reference> belonging to <reference name="wizard">Wizards</reference> with predetermined <reference name="spell">spells</reference>, or any <reference name="bound_spell">Bound Spells</reference>) are ignored for the purpose of duplicated <reference name="spell">spells</reference>. A player can have more than one such <reference name="spell">spell</reference> in the army.
+      </definition>
+    </subsection>
+  </chapter>
+
+</document>
