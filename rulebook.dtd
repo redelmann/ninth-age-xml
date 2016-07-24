@@ -25,16 +25,21 @@
 <!ELEMENT important (#PCDATA | %Content;)*>
 
 <!ATTLIST chapter title CDATA #REQUIRED>
+<!ATTLIST chapter id ID #IMPLIED>
 <!ATTLIST section title CDATA #REQUIRED>
+<!ATTLIST section id ID #IMPLIED>
 <!ATTLIST subsection title CDATA #REQUIRED>
+<!ATTLIST subsection id ID #IMPLIED>
 <!ATTLIST note title CDATA #REQUIRED>
+<!ATTLIST note id ID #IMPLIED>
 <!ATTLIST item title CDATA #IMPLIED>
+<!ATTLIST item id ID #IMPLIED>
 <!ATTLIST definition name ID #REQUIRED>
 <!ATTLIST reference name CDATA #REQUIRED>
 <!ATTLIST reference type (example|reference) "reference">
 <!ATTLIST image source CDATA #REQUIRED>
 <!ATTLIST link to CDATA #REQUIRED>
 <!ATTLIST caption title CDATA #REQUIRED>
-<!ATTLIST figure name ID #REQUIRED>
+<!ATTLIST figure id ID #REQUIRED>
 <!ATTLIST table title CDATA #IMPLIED>
 <!ATTLIST headers title CDATA #IMPLIED>

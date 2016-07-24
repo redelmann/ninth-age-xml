@@ -65,7 +65,7 @@ A <reference name="unit">unit</reference>'s <reference name="centre_of_unit">Cen
           A <reference name="unit">unit</reference> has 4 <reference name="arc">arcs</reference>: front, rear, and two flanks. Each arc is determined by extending a straight line from the corners of the unit's <reference name="base">bases</reference>, in a 135° angle from the unit's front (for the front arc), rear (for the rear arc) or flanks (for the flank arcs), see <link to="figure_1">figure 1</link>. <reference name="unit">Units</reference> on round <reference name="base">bases</reference> don't have <reference name="arc">arcs</reference> (they can draw <reference name="line_of_sight">Line of Sight</reference> from any point on their bases, in any direction).
         </definition>
       </subsection>
-      <figure name="figure_1">
+      <figure id="figure_1">
         <image source="centre_footprint_and_arcs.png" />
         <caption title="Figure 1">
           This unit has 3 <reference name="rank">ranks</reference> and 5 <reference name="file">files</reference>. The <reference name="base">base</reference> on the side is a <reference name="character">Character</reference> with a <reference name="mismatching_base">Mismatching base</reference> that has joined the <reference name="unit">unit</reference>. The last <reference name="rank">rank</reference> is <reference name="incomplete_rank">incomplete</reference> and only contains 3 <reference name="model">models</reference>. The <reference name="unit">unit</reference>'s <reference name="footprint">Footprint</reference> is the area occupied by the <reference name="base">bases</reference> of all the <reference name="model">models</reference> within the <reference name="unit">unit</reference> (the green area). The <reference name="centre_of_unit">Centre of the unit</reference> is the centre of the rectangle drawn around its outer edges (marked with a red x). The front, side and rear <reference name="arc">arcs</reference> are defined by using a 135° angle from the <reference name="unit">unit</reference>'s edges.
@@ -88,10 +88,10 @@ A <reference name="unit">unit</reference>'s <reference name="centre_of_unit">Cen
           Each Player Turn is divided into four Phases, performed in the following order:
 
           <sequence>
-            <item><reference name="movement_phase">Movement Phase</reference></item>
-            <item><reference name="magic_phase">Magic Phase</reference></item>
-            <item><reference name="shooting_phase">Shooting Phase</reference></item>
-            <item><reference name="close_combat_phase">Close Combat Phase</reference></item>
+            <item><link to="movement_phase">Movement Phase</link></item>
+            <item><link to="magic_phase">Magic Phase</link></item>
+            <item><link to="shooting_phase">Shooting Phase</link></item>
+            <item><link to="close_combat_phase">Close Combat Phase</link></item>
           </sequence>
         </definition>
       </subsection>
@@ -135,7 +135,7 @@ A <reference name="unit">unit</reference>'s <reference name="centre_of_unit">Cen
         </note>
       </subsection>
 
-      <figure name="figure_2">
+      <figure id="figure_2">
         <image source="scatter_dice.jpg" />
         <caption title="Figure 2">Two different ways of representing a <reference name="scatter_dice">Scatter Dice</reference>.</caption>
       </figure>
@@ -590,37 +590,34 @@ A <reference name="unit">unit</reference>'s <reference name="centre_of_unit">Cen
     Before the game can begin, some preparations have to be made.
 
     <sequence>
-      <item>Decide on <reference name="game_size">Game Size</reference>.</item>
-      <item><reference name="share_army_list">Share Army List</reference> with <reference name="opponent">Opponent</reference>.</item>
-      <item><reference name="building_battlefield">Build the Battlefield</reference>.</item>
-      <item>Pick <reference name="deployment_type">Deployment Type</reference>.</item>
-      <item>Choose <reference name="secondary_objective">Secondary Objectives</reference>.</item>
-      <item>Determine <reference name="deployment_zone">Deployment Zones</reference>.</item>
-      <item><reference name="generating_spells">Generate Spells</reference>.</item>
-      <item><reference name="deployment_phase">Deployment Phase</reference>.</item>
+      <item><link to="decide_on_game_size">Decide on Game Size.</link></item>
+      <item><link to="share_army_list">Share Army List with Opponent.</link></item>
+      <item><link to="building_battlefield">Build the Battlefield.</link></item>
+      <item><link to="pick_deployment_type">Pick Deployment Type.</link></item>
+      <item><link to="choose_secondary_objective">Choose Secondary Objectives.</link></item>
+      <item><link to="determine_deployment_zone">Determine Deployment Zones.</link></item>
+      <item><link to="generating_spells">Generate Spells.</link></item>
+      <item><link to="deployment_phase">Deployment Phase.</link></item>
     </sequence>
 
-    <subsection title="The Size of the Game">
+    <subsection title="The Size of the Game" id="decide_on_game_size">
       <definition name="game_size">
         In Fantasy Battles: The 9th Age, two armies opposing each other on the battlefield must have roughly the same <reference name="point_cost">point cost</reference>. This ensures that the battle will be decided through the clever strategies and tactics of the players rather than by an unfair difference in army size. The first step to setting up a game is to agree on the <reference name="game_size">total point cost of the army</reference> that each player will bring. This pre­determined <reference name="point_cost">point cost</reference> will henceforth correspond to the <reference name="game_size">size of the game</reference>. Armies are typically worth between 500 and 1000 points for small engagements, between 1000 and 2000 points for serious battles and beyond 2000 points for mighty clashes between epic armies.
       </definition>
     </subsection>
 
-    <subsection title="Sharing Army Lists">
-      <definition name="share_army_list">
-        After deciding the <reference name="game_size">size of the game</reference>, the next step is for both players to swap <reference name="army_list">Army Lists</reference> and share all relevant information about the upcoming game. </definition>
+    <subsection title="Sharing Army Lists" id="share_army_list">
+      After deciding the <reference name="game_size">size of the game</reference>, the next step is for both players to swap <reference name="army_list">Army Lists</reference> and share all relevant information about the upcoming game.
 
       Alternatively, the players may agree to keep certain aspects about their armies secret, which they will progressively reveal during the course of the game. For more information please see the <reference name="hidden_list">section on Hidden Lists</reference>.
     </subsection>
 
-    <subsection title="Building the Battlefield">
-      <definition name="building_battlefield">
-        <definition name="battlefield">
-          A game of Fantasy Battles: The 9th Age is played on a board that is 72” wide and 48” deep. For smaller battles involving <reference name="warband">Warbands</reference>, it is recommended to use a board that is 36” wide and 48” deep, while for bigger games involving <reference name="grand_army">Grand Armies</reference> it is recommended to adjust the size depending on the size of the armies. While some battles may take place on a completely flat board, a <reference name="battlefield">Battlefield</reference> typically has <reference name="terrain_features">Terrain Features</reference> placed upon it.
-        </definition>
-
-        The players can freely agree on the size, type and number of <reference name="terrain_features">Terrain Features</reference> to be placed, as well as their positions. If an agreement cannot be reached, the game provides the following default rules for setting up a randomly generated <reference name="battlefield">Battlefield</reference>.
+    <subsection title="Building the Battlefield" id="building_battlefield">
+      <definition name="battlefield">
+        A game of Fantasy Battles: The 9th Age is played on a board that is 72” wide and 48” deep. For smaller battles involving <reference name="warband">Warbands</reference>, it is recommended to use a board that is 36” wide and 48” deep, while for bigger games involving <reference name="grand_army">Grand Armies</reference> it is recommended to adjust the size depending on the size of the armies. While some battles may take place on a completely flat board, a <reference name="battlefield">Battlefield</reference> typically has <reference name="terrain_features">Terrain Features</reference> placed upon it.
       </definition>
+
+      The players can freely agree on the size, type and number of <reference name="terrain_features">Terrain Features</reference> to be placed, as well as their positions. If an agreement cannot be reached, the game provides the following default rules for setting up a randomly generated <reference name="battlefield">Battlefield</reference>.
 
       <list>
         <item>First, divide the gaming board into 24”x24” sections (18”x24” if the board is 36”x48”).</item>
@@ -653,7 +650,7 @@ A <reference name="unit">unit</reference>'s <reference name="centre_of_unit">Cen
       </list>
     </subsection>
 
-    <subsection title="Deployment Type">
+    <subsection title="Deployment Type" id="pick_deployment_type">
       <definition name="deployment_type">
         Players may agree on which <reference name="deployment_type">deployment type</reference> to use or may want to randomize this variable by rolling a D6 and consulting the following table.
 
@@ -683,7 +680,7 @@ A <reference name="unit">unit</reference>'s <reference name="centre_of_unit">Cen
         </table>
       </definition>
 
-      <figure name="figure_3">
+      <figure id="figure_3">
         <image source="deployment_types.jpg" />
         <caption title="Figure 3">
           Visualisation of the three different <reference name="deployment_type">deployment types</reference>.
@@ -691,7 +688,7 @@ A <reference name="unit">unit</reference>'s <reference name="centre_of_unit">Cen
       </figure>
     </subsection>
 
-    <subsection title="Secondary Objectives">
+    <subsection title="Secondary Objectives" id="choose_secondary_objective">
       <definition name="secondary_objective">
         Before picking <reference name="deployment_zone">Deployment Zones</reference>, the players can agree to pick one or more <reference name="secondary_objective">Secondary Objectives</reference> (if any at all), or they can randomly choose by rolling a D6 and consulting the table below.
 
@@ -750,14 +747,12 @@ A <reference name="unit">unit</reference>'s <reference name="centre_of_unit">Cen
       </definition>
     </subsection>
 
-    <subsection title="Generating Spells">
-      <definition name="generating_spells">
-        Starting with the player that picked their <reference name="deployment_zone">Deployment Zone</reference>, each player must now generate <reference name="spell">spells</reference> for all their <reference name="wizard">Wizards</reference>. To do this, pick a <reference name="wizard">Wizard</reference> and consult the chosen <reference name="path_of_magic">Path of Magic</reference> (the <reference name="path_of_magic">Path</reference> used by the <reference name="wizard">Wizard</reference> must be noted on the <reference name="army_list">Army List</reference>). All <reference name="path_of_magic">Magic Paths</reference> can be found in <link to="book_path_of_magic">Fantasy Battles: The 9th Age: Paths of Magic</link>. All <reference name="path_of_magic">Paths</reference> contain <reference name="spell">spells</reference> numbered 0 through 6. Roll a D6 for each <reference name="spell">spell</reference> the <reference name="wizard">Wizard</reference> has (normally the same number as its <reference name="wizard_level">Wizard Level</reference>) to see which <reference name="spell">spells</reference> the <reference name="wizard">Wizard</reference> can use in this battle. If a '1' is rolled, the <reference name="wizard">Wizard</reference> knows the <reference name="spell">spell</reference> number 1, and so on. If a duplicate <reference name="spell">spell</reference> is rolled (either because another <reference name="wizard">Wizard</reference> in the same army has already rolled the <reference name="spell">spell</reference> or because the same <reference name="wizard">Wizard</reference> rolled a double), the <reference name="wizard">Wizard</reference> must replace the duplicate result with another freely chosen <reference name="spell">spell</reference> from the same <reference name="path_of_magic">Path</reference> that has not already been rolled. Two <reference name="wizard">Wizards</reference> in the same army cannot know the same <reference name="spell">spell</reference>, and no <reference name="wizard">Wizard</reference> can know a single <reference name="spell">spell</reference> more than once (if you are unable to replace the duplicate <reference name="spell">spell</reference> with an unoccupied <reference name="spell">spell</reference>, the <reference name="spell">spell</reference> is lost). The <reference name="wizard">Wizard</reference> may always exchange one of its spells for the <reference name="signature_spell">signature spell</reference> of that <reference name="path_of_magic">Magic Path</reference> (labelled as spell number 0). This <reference name="spell">spell</reference> can be chosen even if other Wizards already have that <reference name="spell">spell</reference>.
+    <subsection title="Generating Spells" id="generating_spells">
+      Starting with the player that picked their <reference name="deployment_zone">Deployment Zone</reference>, each player must now generate <reference name="spell">spells</reference> for all their <reference name="wizard">Wizards</reference>. To do this, pick a <reference name="wizard">Wizard</reference> and consult the chosen <reference name="path_of_magic">Path of Magic</reference> (the <reference name="path_of_magic">Path</reference> used by the <reference name="wizard">Wizard</reference> must be noted on the <reference name="army_list">Army List</reference>). All <reference name="path_of_magic">Magic Paths</reference> can be found in <link to="book_path_of_magic">Fantasy Battles: The 9th Age: Paths of Magic</link>. All <reference name="path_of_magic">Paths</reference> contain <reference name="spell">spells</reference> numbered 0 through 6. Roll a D6 for each <reference name="spell">spell</reference> the <reference name="wizard">Wizard</reference> has (normally the same number as its <reference name="wizard_level">Wizard Level</reference>) to see which <reference name="spell">spells</reference> the <reference name="wizard">Wizard</reference> can use in this battle. If a '1' is rolled, the <reference name="wizard">Wizard</reference> knows the <reference name="spell">spell</reference> number 1, and so on. If a duplicate <reference name="spell">spell</reference> is rolled (either because another <reference name="wizard">Wizard</reference> in the same army has already rolled the <reference name="spell">spell</reference> or because the same <reference name="wizard">Wizard</reference> rolled a double), the <reference name="wizard">Wizard</reference> must replace the duplicate result with another freely chosen <reference name="spell">spell</reference> from the same <reference name="path_of_magic">Path</reference> that has not already been rolled. Two <reference name="wizard">Wizards</reference> in the same army cannot know the same <reference name="spell">spell</reference>, and no <reference name="wizard">Wizard</reference> can know a single <reference name="spell">spell</reference> more than once (if you are unable to replace the duplicate <reference name="spell">spell</reference> with an unoccupied <reference name="spell">spell</reference>, the <reference name="spell">spell</reference> is lost). The <reference name="wizard">Wizard</reference> may always exchange one of its spells for the <reference name="signature_spell">signature spell</reference> of that <reference name="path_of_magic">Magic Path</reference> (labelled as spell number 0). This <reference name="spell">spell</reference> can be chosen even if other Wizards already have that <reference name="spell">spell</reference>.
 
-        <br />
+      <br />
 
-        <reference name="spell">Spells</reference> that are not generated using these rules (such as <reference name="spell">spells</reference> belonging to <reference name="wizard">Wizards</reference> with predetermined <reference name="spell">spells</reference>, or any <reference name="bound_spell">Bound Spells</reference>) are ignored for the purpose of duplicated <reference name="spell">spells</reference>. A player can have more than one such <reference name="spell">spell</reference> in the army.
-      </definition>
+      <reference name="spell">Spells</reference> that are not generated using these rules (such as <reference name="spell">spells</reference> belonging to <reference name="wizard">Wizards</reference> with predetermined <reference name="spell">spells</reference>, or any <reference name="bound_spell">Bound Spells</reference>) are ignored for the purpose of duplicated <reference name="spell">spells</reference>. A player can have more than one such <reference name="spell">spell</reference> in the army.
     </subsection>
   </chapter>
 
