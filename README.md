@@ -1,6 +1,8 @@
 The 9th Age XML Rulebook
 ========================
 
+[![Build Status](https://travis-ci.org/redelmann/ninth-age-xml.svg?branch=master)](https://travis-ci.org/redelmann/ninth-age-xml)
+
 This project is an effort to port [the 9th Age rulebook][rulebook] to an appropriately annotated XML file.
 The goal is to provide tool creators with a richly annotated and easily usable version of the rulebook.
 
