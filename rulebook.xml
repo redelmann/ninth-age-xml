@@ -756,4 +756,49 @@ A <reference name="unit">unit</reference>'s <reference name="centre_of_unit">Cen
     </subsection>
   </chapter>
 
+  <!-- CHAPTER : Deployment Phase -->
+
+  <chapter title="Deployment Phase" id="deployment_phase">
+    <subsection title="Deployment Phase Sequence">
+      <sequence>
+        <item><link to="determine_who_deploys_first">Determine who deploys first.</link></item>
+        <item><link to="take_turns_deploying_units">Take turns deploying units.</link></item>
+        <item><link to="determine_who_takes_the_first_turn">Determine who takes the first turn.</link></item>
+        <item><link to="deploy_remaining_units">Deploy remaining units.</link></item>
+        <item>Deploy <reference name="scout">Scout</reference> <reference name="unit">units</reference>.</item>
+        <item>Move <reference name="vanguard">Vanguard</reference> <reference name="unit">units</reference>.</item>
+        <item><link to="other_rules_and_abilities">Other rules and abilities.</link></item>
+        <item><link to="roll_for_first_turn">Roll for first turn.</link></item>
+      </sequence>
+    </subsection>
+
+    <subsection title="Determine Who Deploys First" id="determine_who_deploys_first">
+      The player who did not choose the <reference name="deployment_zone">Deployment Zone</reference> decides which player deploys first.
+    </subsection>
+
+    <subsection title="Deploy Units" id="take_turns_deploying_units">
+      <definition name="deploy_unit">
+        The players then take turns to <reference name="deploy_unit">deploy</reference> their <reference name="unit">units</reference> (fully inside their own <reference name="deployment_zone">Deployment Zone</reference>). On each of their turns, a player must <reference name="deploy_unit">deploy</reference> at least one <reference name="unit">unit</reference>, but can choose to <reference name="deploy_unit">deploy</reference> any number of <reference name="unit">units</reference>. All <reference name="unit">units</reference> with the <reference name="war_machine">War Machine</reference> <reference name="troop_type">Troop Type</reference> count as a single <reference name="unit">unit</reference> during the <link to="deployment_phase">Deployment Phase</link>. The same goes for all <reference name="character">Characters</reference>.
+      </definition>
+
+      Once a player has <reference name="deploy_unit">deployed</reference> all of their <reference name="unit">units</reference> (excluding <reference name="unit">units</reference> that are not <reference name="deploy_unit">deployed</reference> using the normal rules, such as <reference name="scout">scouting</reference> or <reference name="ambush">ambushing units</reference>), that player must announce if they will roll to play first or second.
+    </subsection>
+
+    <subsection title="Deploy Remaining Units" id="deploy_remaining_units">
+      The remaining player must now <reference name="deploy_unit">deploy</reference> the rest of their army. <definition name="undeployed_unit_number">Count how many <reference name="unit">units</reference> are <reference name="deploy_unit">deployed</reference> in this step and remember the value. This value is called the “<reference name="undeployed_unit_number">Undeployed Units Number</reference>”</definition> and will be used at the end of this sequence. As before, <reference name="deploy_unit">deploying</reference> all remaining <reference name="war_machine">War Machines</reference> and <reference name="character">Characters</reference> counts as one <reference name="unit">unit</reference> each.
+    </subsection>
+
+    <subsection title="Other Rules And Abilities" id="other_rules_and_abilities">
+      Put into effect all remaining rules and abilities described as taking place right before the battle.
+    </subsection>
+
+    <subsection title="Roll For First Turn" id="roll_for_first_turn">
+      Both players must now roll a D6. The player that finished deploying first adds the “<reference name="undeployed_units_number">Undeployed Units Number</reference>” score to their dice roll.
+      <list>
+        <item>If the player who finished deploying first gets a higher result, they play first or second as was previously announced.</item>
+        <item>If the score is a tie  or the player who finished deploying second wins, they can now choose which player has the first turn.</item>
+      </list>
+    </subsection>
+  </chapter>
+
 </document>
