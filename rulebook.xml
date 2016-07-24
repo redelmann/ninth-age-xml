@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "rulebook.dtd">
 <document>
   
   <!-- CHAPTER : Models, Units and Formations -->
@@ -9,7 +10,7 @@
         <reference name="model">Models</reference> represent fighting warriors, monsters and spellcasters. Everything that is standing on the same <reference name="base">base</reference> is considered the same <reference name="model">model</reference> (e.g. a dragon and its rider or a <reference name="cannon">Cannon</reference> and its three crewmen are considered a single <reference name="model">model</reference>).
       </definition>
 
-      <subsection title="Bases and Base Contact" name="bases_and_base_contact">
+      <subsection title="Bases and Base Contact">
         <definition name="base">
           All <reference name="model">models</reference> are placed on a square, rectangular or round <reference name="base">base</reference>. The extent of the <reference name="model">model</reference> is considered to be its <reference name="base">base</reference>.</definition>
 
@@ -332,8 +333,10 @@ A <reference name="unit">unit</reference>'s <reference name="centre_of_unit">Cen
       </subsection>
 
 
-      <subsection title="Using Borrowed Characteristics" name="borrowed_characteristics">
-        In certain situations a <reference name="model">model</reference> may borrow or use the <reference name="characteristics">Characteristic</reference> of another <reference name="model">model</reference>. In this case the value of the <reference name="borrowed_characteristics">borrowed Characteristic</reference> is taken after applying any modification from <reference name="equipment">equipment</reference>, <reference name="spell">spells</reference> or special rules that the owner of the <reference name="characteristics">Characteristic</reference> is subject to. Modification from <reference name="equipment">equipment</reference>, <reference name="spell">spells</reference> or special rules that affects the <reference name="unit">unit</reference> will then be applied to this (following the rules for <reference name="priority_of_modifiers">Priority of Modifiers</reference> below).
+      <subsection title="Using Borrowed Characteristics">
+        <definition name="borrowed_characteristics">
+          In certain situations a <reference name="model">model</reference> may borrow or use the <reference name="characteristics">Characteristic</reference> of another <reference name="model">model</reference>. In this case the value of the <reference name="borrowed_characteristics">borrowed Characteristic</reference> is taken after applying any modification from <reference name="equipment">equipment</reference>, <reference name="spell">spells</reference> or special rules that the owner of the <reference name="characteristics">Characteristic</reference> is subject to. Modification from <reference name="equipment">equipment</reference>, <reference name="spell">spells</reference> or special rules that affects the <reference name="unit">unit</reference> will then be applied to this (following the rules for <reference name="priority_of_modifiers">Priority of Modifiers</reference> below).
+        </definition>
       </subsection>
 
       <subsection title="Performing a Leadership Test">
@@ -347,15 +350,17 @@ A <reference name="unit">unit</reference>'s <reference name="centre_of_unit">Cen
         There are many different game mechanics that may call for a <reference name="leadership_test">Leadership Test</reference>, such as performing a <reference name="panic_test">Panic Test</reference> or a <reference name="break_test">Break Test</reference>. All such game mechanics are <reference name="leadership_test">Leadership Tests</reference>, regardless of any additional rules and modifications described in the relevant sections of the rulebook.
       </subsection>
 
-      <subsection title="Priority of Modifiers" name="priority_of_modifiers">
-        When <reference name="characteristics">Characteristics</reference> are modified, the modifiers are applied in a strict order:
-        <sequence>
-          <item><reference name="borrowed_characteristics">Characteristics borrowed</reference>* or set to certain values (such as <reference name="inspiring presence">Inspiring Presence</reference> or a failed <reference name="fear_test">Fear Test</reference>)</item>
-          <item>Multiplications (such as halved, doubled or multiplied by 3). Unless noted otherwise, round fractions up.</item>
-          <item>Addition and Subtraction (such as ­1 or +3).</item>
-        </sequence>
-        *If the <reference name="characteristics">Characteristic</reference> to be borrowed is modified, apply these modifiers before <reference name="borrowed_characteristics">borrowing the Characteristic</reference>.
-        If several modifications within the same group are to be applied, first apply modifications without a maximum/minimum value, then apply modifications with a maximum/minimum value (for example, "­1 <reference name="initiative">Initiative</reference>, to a minimum of 1"). After that, apply modifications chronologically, starting with the modifier that was applied first. Remember that <reference name="characteristics">Characteristics</reference> can never (not even temporarily) be modified to above 10 or below 0.
+      <subsection title="Priority of Modifiers">
+        <definition name="priority_of_modifiers">
+          When <reference name="characteristics">Characteristics</reference> are modified, the modifiers are applied in a strict order:
+          <sequence>
+            <item><reference name="borrowed_characteristics">Characteristics borrowed</reference>* or set to certain values (such as <reference name="inspiring presence">Inspiring Presence</reference> or a failed <reference name="fear_test">Fear Test</reference>)</item>
+            <item>Multiplications (such as halved, doubled or multiplied by 3). Unless noted otherwise, round fractions up.</item>
+            <item>Addition and Subtraction (such as ­1 or +3).</item>
+          </sequence>
+          *If the <reference name="characteristics">Characteristic</reference> to be borrowed is modified, apply these modifiers before <reference name="borrowed_characteristics">borrowing the Characteristic</reference>.
+          If several modifications within the same group are to be applied, first apply modifications without a maximum/minimum value, then apply modifications with a maximum/minimum value (for example, "­1 <reference name="initiative">Initiative</reference>, to a minimum of 1"). After that, apply modifications chronologically, starting with the modifier that was applied first. Remember that <reference name="characteristics">Characteristics</reference> can never (not even temporarily) be modified to above 10 or below 0.
+        </definition>
       </subsection>
     </section>
   </chapter>
@@ -454,8 +459,8 @@ A <reference name="unit">unit</reference>'s <reference name="centre_of_unit">Cen
           </definition></definition>
         </item>
         <item title="0-X Choice">
-          <definition name="0x_choice">
-            Some units are marked with “<reference name="0x_choice">0-X Choices</reference>” (for example “<reference name="0x_choice">0-2 Choice</reference>”). This means that such units can be taken from zero to X times, and ignore the normal duplication limits. The maximum limit (X) is halved for <reference name="warband">Warbands</reference> and doubled for <reference name="grand_army">Grand Armies</reference>, rounds fractions up.
+          <definition name="choice_0x">
+            Some units are marked with “<reference name="choice_0x">0-X Choices</reference>” (for example “<reference name="choice_0x">0-2 Choice</reference>”). This means that such units can be taken from zero to X times, and ignore the normal duplication limits. The maximum limit (X) is halved for <reference name="warband">Warbands</reference> and doubled for <reference name="grand_army">Grand Armies</reference>, rounds fractions up.
           </definition>
         </item>
       </list>
@@ -495,7 +500,7 @@ A <reference name="unit">unit</reference>'s <reference name="centre_of_unit">Cen
             <cell>max 1</cell>
           </row>
           <row>
-            <header><reference name="0x_choice">0-X Choice</reference></header>
+            <header><reference name="choice_0x">0-X Choice</reference></header>
             <cell>half, rounded up</cell>
           </row>
         </table>
@@ -532,7 +537,7 @@ A <reference name="unit">unit</reference>'s <reference name="centre_of_unit">Cen
             <cell>max 1</cell>
           </row>
           <row>
-            <header><reference name="0x_choice">0-X Choice</reference></header>
+            <header><reference name="choice_0x">0-X Choice</reference></header>
             <cell>double</cell>
           </row>
         </table>

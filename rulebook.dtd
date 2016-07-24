@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf8" ?>
+<!ENTITY % Content "definition | reference | link | table | sequence | list | figure | illustration | important | br">
+
+<!ELEMENT chapter (#PCDATA | section | subsection | note | %Content;)*>
+<!ELEMENT section (#PCDATA | subsection | note | %Content;)*>
+<!ELEMENT subsection (#PCDATA | note | %Content;)*>
+<!ELEMENT note (#PCDATA | %Content;)*>
+<!ELEMENT definition (#PCDATA | note | %Content;)*>
+<!ELEMENT table (headers?, row*)>
+<!ELEMENT headers (header*)>
+<!ELEMENT header (#PCDATA | reference | link)*>
+<!ELEMENT row (header?, cell*)>
+<!ELEMENT cell (#PCDATA | %Content;)*>
+<!ELEMENT sequence (item*)>
+<!ELEMENT item (#PCDATA | %Content;)*>
+<!ELEMENT list (item*)>
+<!ELEMENT figure (image, caption)>
+<!ELEMENT image EMPTY>
+<!ELEMENT caption (#PCDATA | reference | link)*>
+<!ELEMENT illustration (image*)>
+<!ELEMENT reference (#PCDATA | %Content;)*>
+<!ELEMENT document (chapter+)>
+<!ELEMENT br EMPTY>
+<!ELEMENT link (#PCDATA)*>
+<!ELEMENT important (#PCDATA | %Content;)*>
+
+<!ATTLIST chapter title CDATA #REQUIRED>
+<!ATTLIST section title CDATA #REQUIRED>
+<!ATTLIST subsection title CDATA #REQUIRED>
+<!ATTLIST note title CDATA #REQUIRED>
+<!ATTLIST item title CDATA #IMPLIED>
+<!ATTLIST definition name ID #REQUIRED>
+<!ATTLIST reference name CDATA #REQUIRED>
+<!ATTLIST reference type (example|reference) "reference">
+<!ATTLIST image source CDATA #REQUIRED>
+<!ATTLIST link to CDATA #REQUIRED>
+<!ATTLIST caption title CDATA #REQUIRED>
+<!ATTLIST figure name ID #REQUIRED>
+<!ATTLIST table title CDATA #IMPLIED>
+<!ATTLIST headers title CDATA #IMPLIED>
