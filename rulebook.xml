@@ -62,7 +62,7 @@ A <reference name="unit">unit</reference>'s <reference name="centre_of_unit">Cen
       </subsection>
       <subsection title="Unit Facing and Arcs">
         <definition name="arc">
-          A <reference name="unit">unit</reference> has 4 <reference name="arc">arcs</reference>: front, rear, and two flanks. Each arc is determined by extending a straight line from the corners of the unit's <reference name="base">bases</reference>, in a 135° angle from the unit's front (for the front arc), rear (for the rear arc) or flanks (for the flank arcs), see <link to="figure_1">figure 1</link>. <reference name="unit">Units</reference> on round <reference name="base">bases</reference> don't have <reference name="arc">arcs</reference> (they can draw <reference name="line_of_sight">Line of Sight</reference> from any point on their bases, in any direction).
+          A <reference name="unit">unit</reference> has 4 <reference name="arc">arcs</reference>: front, rear, and two flanks. <definition name="flank_arc"><definition name="rear_arc"><definition name="front_arc">Each <reference name="arc">arc</reference> is determined by extending a straight line from the corners of the <reference name="unit">unit</reference>'s <reference name="base">bases</reference>, in a 135° angle from the unit's front (for the <reference name="front_arc">front arc</reference>)</definition>, rear (for the <reference name="rear_arc">rear arc</reference>)</definition> or flanks (for the <reference name="flank_arc">flank arcs</reference>)</definition>, see <link to="figure_1">figure 1</link>. <reference name="unit">Units</reference> on round <reference name="base">bases</reference> don't have <reference name="arc">arcs</reference> (they can draw <reference name="line_of_sight">Line of Sight</reference> from any point on their bases, in any direction).
         </definition>
       </subsection>
       <figure id="figure_1">
@@ -85,13 +85,13 @@ A <reference name="unit">unit</reference>'s <reference name="centre_of_unit">Cen
 
       <subsection title="Player Turn">
         <definition name="player_turn">
-          Each Player Turn is divided into four Phases, performed in the following order:
+          Each <reference name="player_turn">Player Turn</reference> is divided into four <reference name="phase">Phases</reference>, performed in the following order:
 
           <sequence>
-            <item><link to="movement_phase">Movement Phase</link></item>
-            <item><link to="magic_phase">Magic Phase</link></item>
-            <item><link to="shooting_phase">Shooting Phase</link></item>
-            <item><link to="close_combat_phase">Close Combat Phase</link></item>
+            <item><link to="chapter_movement_phase">Movement Phase</link></item>
+            <item><link to="chapter_magic_phase">Magic Phase</link></item>
+            <item><link to="chapter_shooting_phase">Shooting Phase</link></item>
+            <item><link to="chapter_close_combat_phase">Close Combat Phase</link></item>
           </sequence>
         </definition>
       </subsection>
@@ -597,7 +597,7 @@ A <reference name="unit">unit</reference>'s <reference name="centre_of_unit">Cen
       <item><link to="choose_secondary_objective">Choose Secondary Objectives.</link></item>
       <item><link to="determine_deployment_zone">Determine Deployment Zones.</link></item>
       <item><link to="generating_spells">Generate Spells.</link></item>
-      <item><link to="deployment_phase">Deployment Phase.</link></item>
+      <item><link to="chapter_deployment_phase">Deployment Phase.</link></item>
     </sequence>
 
     <subsection title="The Size of the Game" id="decide_on_game_size">
@@ -758,18 +758,20 @@ A <reference name="unit">unit</reference>'s <reference name="centre_of_unit">Cen
 
   <!-- CHAPTER : Deployment Phase -->
 
-  <chapter title="Deployment Phase" id="deployment_phase">
+  <chapter title="Deployment Phase" id="chapter_deployment_phase">
     <subsection title="Deployment Phase Sequence">
-      <sequence>
-        <item><link to="determine_who_deploys_first">Determine who deploys first.</link></item>
-        <item><link to="take_turns_deploying_units">Take turns deploying units.</link></item>
-        <item><link to="determine_who_takes_the_first_turn">Determine who takes the first turn.</link></item>
-        <item><link to="deploy_remaining_units">Deploy remaining units.</link></item>
-        <item>Deploy <reference name="scout">Scout</reference> <reference name="unit">units</reference>.</item>
-        <item>Move <reference name="vanguard">Vanguard</reference> <reference name="unit">units</reference>.</item>
-        <item><link to="other_rules_and_abilities">Other rules and abilities.</link></item>
-        <item><link to="roll_for_first_turn">Roll for first turn.</link></item>
-      </sequence>
+      <definition name="deployment_phase">
+        <sequence>
+          <item><link to="determine_who_deploys_first">Determine who deploys first.</link></item>
+          <item><link to="take_turns_deploying_units">Take turns deploying units.</link></item>
+          <item><link to="determine_who_takes_the_first_turn">Determine who takes the first turn.</link></item>
+          <item><link to="deploy_remaining_units">Deploy remaining units.</link></item>
+          <item>Deploy <reference name="scout">Scout</reference> <reference name="unit">units</reference>.</item>
+          <item>Move <reference name="vanguard">Vanguard</reference> <reference name="unit">units</reference>.</item>
+          <item><link to="other_rules_and_abilities">Other rules and abilities.</link></item>
+          <item><link to="roll_for_first_turn">Roll for first turn.</link></item>
+        </sequence>
+      </definition>
     </subsection>
 
     <subsection title="Determine Who Deploys First" id="determine_who_deploys_first">
@@ -778,7 +780,7 @@ A <reference name="unit">unit</reference>'s <reference name="centre_of_unit">Cen
 
     <subsection title="Deploy Units" id="take_turns_deploying_units">
       <definition name="deploy_unit">
-        The players then take turns to <reference name="deploy_unit">deploy</reference> their <reference name="unit">units</reference> (fully inside their own <reference name="deployment_zone">Deployment Zone</reference>). On each of their turns, a player must <reference name="deploy_unit">deploy</reference> at least one <reference name="unit">unit</reference>, but can choose to <reference name="deploy_unit">deploy</reference> any number of <reference name="unit">units</reference>. All <reference name="unit">units</reference> with the <reference name="war_machine">War Machine</reference> <reference name="troop_type">Troop Type</reference> count as a single <reference name="unit">unit</reference> during the <link to="deployment_phase">Deployment Phase</link>. The same goes for all <reference name="character">Characters</reference>.
+        The players then take turns to <reference name="deploy_unit">deploy</reference> their <reference name="unit">units</reference> (fully inside their own <reference name="deployment_zone">Deployment Zone</reference>). On each of their turns, a player must <reference name="deploy_unit">deploy</reference> at least one <reference name="unit">unit</reference>, but can choose to <reference name="deploy_unit">deploy</reference> any number of <reference name="unit">units</reference>. All <reference name="unit">units</reference> with the <reference name="war_machine">War Machine</reference> <reference name="troop_type">Troop Type</reference> count as a single <reference name="unit">unit</reference> during the <reference name="deployment_phase">Deployment Phase</reference>. The same goes for all <reference name="character">Characters</reference>.
       </definition>
 
       Once a player has <reference name="deploy_unit">deployed</reference> all of their <reference name="unit">units</reference> (excluding <reference name="unit">units</reference> that are not <reference name="deploy_unit">deployed</reference> using the normal rules, such as <reference name="scout">scouting</reference> or <reference name="ambush">ambushing units</reference>), that player must announce if they will roll to play first or second.
@@ -799,6 +801,67 @@ A <reference name="unit">unit</reference>'s <reference name="centre_of_unit">Cen
         <item>If the score is a tie  or the player who finished deploying second wins, they can now choose which player has the first turn.</item>
       </list>
     </subsection>
+  </chapter>
+
+  <!-- CHAPTER: Movement Phase -->
+
+  <chapter title="Movement Phase" id="chapter_movement_phase">
+    In the <reference name="movement_phase">Movement Phase</reference> you have the chance to move your <reference name="unit">units</reference> on the <reference name="battlefield">Battlefield</reference>.
+
+    <section title="The Movement Phase Sequence">
+      <definition name="movement_phase">
+        The <reference name="movement_phase">Movement Phase</reference> is divided into the following steps.
+
+        <sequence>
+          <item>Start of the <reference name="movement_phase">Movement Phase</reference> (and start of the <reference name="player_turn">Player Turn</reference>).</item>
+          <item><link to="section_declaring_charges">Declare Charges.</link></item>
+          <item><link to="section_move_chargers">Move Chargers.</link></item>
+          <item><link to="section_compulsory_move">Compulsory Moves.</link></item>
+          <item><link to="section_remain_moves">Remaining Moves.</link></item>
+          <item>End of <reference name="movement_phase">Movement Phase</reference>.</item>
+        </sequence>
+      </definition>
+    </section>
+
+    <section title="Declaring Charges" id="section_declaring_charges">
+      If you want any of your <reference name="unit">units</reference> to engage an enemy <reference name="unit">unit</reference> in <reference name="close_combat">Close Combat</reference>, you must declare which of your <reference name="unit">units</reference> will attempt to <reference name="charge">charge</reference> which enemy <reference name="unit">unit</reference>, one at a time. Each time the <reference name="active_player">Active Player</reference> declares a <reference name="charge">charge</reference>, the <reference name="reactive_player">Reactive Player</reference> must declare the charged <reference name="unit">unit</reference>'s <reference name="charge_reaction">Charge Reaction</reference>.
+
+      <br />
+
+      <definition name="valid_charge_target"><reference name="charge">Charges</reference> can only be declared at targets that are in the charging <reference name="unit">unit</reference>’s <reference name="line_of_sight">Line of Sight</reference> and that the charging <reference name="unit">unit</reference> has a chance of completing the <reference name="charge">charge</reference> against. This means that the target <reference name="unit">unit</reference> must be within the charger's potential <reference name="charge_range">Charge Range</reference> and there must be enough room to move the charger into <reference name="base_contact">base contact</reference> with its target.</definition> When considering if a <reference name="charge">charge</reference> is possible, do not take potential <reference name="charge_reaction_flee">Flee Charge Reactions</reference> into account (not even mandatory ones), but do take already declared <reference name="charge">charges</reference> into account (since charging <reference name="model">models</reference> might have a chance to move out of the way).
+
+      <subsection title="Charge Reactions">
+        <definition name="charge_reaction">
+          A <reference name="unit">unit</reference> that has a <reference name="charge">charge</reference> declared against it must immediately declare its <reference name="charge_reaction">Charge Reaction</reference>, before any more <reference name="charge">charges</reference> are declared. There are three different <reference name="charge_reaction">Charge Reactions</reference>: “<reference name="charge_reaction_hold">Hold</reference>”, “<reference name="charge_reaction_stand_and_shoot">Stand and Shoot</reference>” and “<reference name="charge_reaction_flee">Flee</reference>”.
+        </definition>
+
+        <note title="Hold">
+          <definition name="charge_reaction_hold">
+            A <reference name="charge_reaction_hold">Hold reaction</reference> means that the <reference name="unit">unit</reference> does nothing. A <reference name="unit">unit</reference> <reference name="engaged_in_combat">Engaged in Combat</reference> can only choose a <reference name="charge_reaction_hold">Hold reaction</reference>.
+          </definition>
+        </note>
+
+        <note title="Stand and Shoot">
+          <definition name="charge_reaction_stand_and_shoot">
+            A <reference name="charge_reaction_stand_and_shoot">Stand and Shoot reaction</reference> may be taken if the charged <reference name="unit">unit</reference> has <reference name="shooting_weapon">Shooting Weapons</reference>, the charging enemy is in their <reference name="front_arc">Front Arc</reference> and the charging <reference name="unit">unit</reference> is further away than its <reference name="movement">Movement</reference> value (using the lowest value among the charging <reference name="model">models</reference> if it has more than one). The charged <reference name="unit">unit</reference> immediately performs a <reference name="shooting_attack">Shooting Attack</reference> as if in the <reference name="shooting_phase">Shooting Phase</reference>, even if the enemy is beyond the <reference name="weapon_range">weapon's maximum Range</reference>. (Remember to apply any applicable <reference name="shooting_modifiers">modifiers</reference> like <reference name="shooting_modifier_long_range">Long Range</reference> and <reference name="shooting_modifier_stand_and_shoot">Stand and Shoot</reference>). A <reference name="unit">unit</reference> can only choose this <reference name="charge_reaction">Charge Reaction</reference> once per turn, even if it is charged multiple times.
+          </definition>
+        </note>
+
+        <note title="Flee">
+          <definition name="charge_reaction_flee">
+            The charged <reference name="unit">unit</reference> immediately <reference name="flee">flees</reference> directly away from the <reference name="charge">charging</reference> enemy (in the direction of a line drawn from the <reference name="centre_of_unit">Centre of the charging unit</reference> through the <reference name="centre_of_unit">Centre of the charged unit</reference>). After a <reference name="unit">unit</reference> completes the <reference name="flee">Flee movement</reference>, any <reference name="unit">unit</reference> that declared a <reference name="charge">charge</reference> towards this <reference name="unit">unit</reference> may immediately attempt to <reference name="redirect_charge">Redirect their Charge</reference>. An already <reference name="fleeing">fleeing</reference> <reference name="unit">unit</reference> that is charged must always choose to <reference name="charge_reaction_flee">flee</reference>.
+          </definition>
+        </note>
+
+        <note title="Redirecting a Charge">
+          <definition name="redirect_charge">
+            When a <reference name="unit">unit</reference> chooses the <reference name="charge_reaction_flee">Flee Charge Reaction</reference>, the charger may try to <reference name="redirect_charge">Redirect the Charge</reference>. If so, roll a <reference name="leadership_test">Leadership Test</reference>. If failed, the <reference name="unit">unit</reference> will try to complete the <reference name="charge">charge</reference> towards the <reference name="unit">unit</reference> that fled. If passed, the <reference name="unit">unit</reference> can immediately declare a new <reference name="charge">charge</reference> towards another <reference name="valid_charge_target">viable target</reference> <reference name="unit">unit</reference>, which may choose their <reference name="charge_reaction">Charge Reaction</reference> as normal. If more than one <reference name="unit">unit</reference> declared a <reference name="charge">charge</reference> against the <reference name="fleeing">fleeing</reference> <reference name="unit">unit</reference>, each may try to redirect its <reference name="charge">charge</reference> in any order chosen by the <reference name="active_player">Active Player</reference>. A <reference name="unit">unit</reference> can only <reference name="redirect_charge">redirect a charge</reference> once per turn. If the situation arises that a <reference name="unit">unit</reference> <reference name="redirect_charge">redirects a charge</reference> and the second target also <reference name="charge_reaction_flee">flees</reference>, the charging <reference name="unit">unit</reference> may opt to <reference name="charge">Charge</reference> either target, but must declare which before rolling the <reference name="charge_range">Charge Range</reference>.
+          </definition>
+        </note>
+      </subsection>
+
+    </section>
+
   </chapter>
 
 </document>
