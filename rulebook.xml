@@ -862,7 +862,7 @@ A <reference name="unit">unit</reference>'s <reference name="centre_of_unit">Cen
         </note>
       </subsection>
 
-      <subsection title="Move Chargers">
+      <subsection title="Move Chargers" id="section_move_chargers">
         Once all <reference name="charge">charges</reference> and <reference name="charge_reaction">Charge Reactions</reference> have been declared, <reference name="charger">chargers</reference> will try to move into combat. Choose a <reference name="unit">unit</reference> that has <reference name="declare_charge">declared a charge</reference> in this phase and roll its <reference name="charge_range">Charge Range</reference> and move the <reference name="charger">Charger</reference>. Repeat this with all <reference name="unit">units</reference> that have <reference name="declare_charge">Declared a Charge</reference> this phase.
 
         <note title="Charge Range">
